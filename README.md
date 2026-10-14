@@ -71,6 +71,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[BrakeModule](https://github.com/killinen/BrakeModule)** — Brake control module for BMW E39 with Bosch DSC. / BMW E39 煞車控制模組。
 - **[c3-faux-touch-keyboard](https://github.com/nelsonjchen/c3-faux-touch-keyboard)** — Cheap macro keyboard firmware to tap the comma 3 screen. / 便宜巨集鍵盤韌體，代按 comma 3 螢幕。
 - **[mount-install-templates](https://github.com/ophwug/mount-install-templates)** — Mount install templates for comma three / 3X / four. / comma three／3X／four 安裝模板。
+- **[ars510-radar](https://github.com/ds-sebastian/ars510-radar)** — Decoder and installer for the Continental ARS510 front radar on radar-ACC Toyotas (RAV4 2022+, C-HR, Yaris). / 解碼 RAV4 2022+ 等 Toyota 的 ARS510 前雷達並接入 openpilot。
 
 ## CAN, DBC & data tools / CAN、DBC 與資料工具
 
@@ -80,6 +81,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[strym](https://github.com/jmscslgroup/strym)** — Real-time CAN logging, analysis and visualization. / 即時 CAN 記錄、分析與視覺化。
 - **[make_cabana_route](https://github.com/projectgus/make_cabana_route)** — Convert local CAN logs into Cabana routes. / 把本地 CAN log 轉成 Cabana route。
 - **[OpenpilotToolkit](https://github.com/spektor56/OpenpilotToolkit)** — Toolkit and library for interacting with openpilot devices. / 與 openpilot 裝置互動的工具組。
+- **[pandacapture](https://github.com/suburbazine/pandacapture)** — CAN capture, live dashboard and firmware flashing for comma Red / Black Panda. / 用 comma Red／Black Panda 擷取 CAN、即時儀表與刷韌體。
 
 ## Dashcam, UI & companions / 行車紀錄、UI 與周邊
 
@@ -88,6 +90,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[Comma4-UI-Streamer](https://github.com/peterclampton/Comma4-UI-Streamer)** — MJPEG stream of the comma 4 UI for any browser. / 把 comma 4 UI 串流到瀏覽器。
 - **[OpenPilotSiriShortcuts](https://github.com/twilsonco/OpenPilotSiriShortcuts)** — iOS Shortcuts to set navigation destinations. / 設定導航目的地的 iOS 捷徑。
 - **[eon-custom-themes](https://github.com/Coltonton/eon-custom-themes)** — Custom boot logos and themes for EON / LEON / Two. / EON／LEON／Two 開機畫面與主題。
+- **[sunnyconf](https://github.com/Falseclock/sunnyconf)** — On-device daemon to edit sunnypilot params over local WiFi from an Android app. / 透過區網用 Android App 調整 sunnypilot 參數的裝置端服務。
 
 ## Self-hosted backends & installers / 自架後端與安裝工具
 
