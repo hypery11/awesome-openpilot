@@ -82,6 +82,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[make_cabana_route](https://github.com/projectgus/make_cabana_route)** — Convert local CAN logs into Cabana routes. / 把本地 CAN log 轉成 Cabana route。
 - **[OpenpilotToolkit](https://github.com/spektor56/OpenpilotToolkit)** — Toolkit and library for interacting with openpilot devices. / 與 openpilot 裝置互動的工具組。
 - **[pandacapture](https://github.com/suburbazine/pandacapture)** — CAN capture, live dashboard and firmware flashing for comma Red / Black Panda. / 用 comma Red／Black Panda 擷取 CAN、即時儀表與刷韌體。
+- **[AutoDistill](https://github.com/bbbenji/AutoDistill)** — Automatic CAN reverse engineering for openpilot car ports from captures. / 從 CAN 擷取自動逆向、產生 openpilot 車款移植。
 
 ## Dashcam, UI & companions / 行車紀錄、UI 與周邊
 
@@ -91,6 +92,9 @@ The projects people actually share. Everything below is the map around them, not
 - **[OpenPilotSiriShortcuts](https://github.com/twilsonco/OpenPilotSiriShortcuts)** — iOS Shortcuts to set navigation destinations. / 設定導航目的地的 iOS 捷徑。
 - **[eon-custom-themes](https://github.com/Coltonton/eon-custom-themes)** — Custom boot logos and themes for EON / LEON / Two. / EON／LEON／Two 開機畫面與主題。
 - **[sunnyconf](https://github.com/Falseclock/sunnyconf)** — On-device daemon to edit sunnypilot params over local WiFi from an Android app. / 透過區網用 Android App 調整 sunnypilot 參數的裝置端服務。
+- **[sunnyconf-app](https://github.com/Falseclock/sunnyconf-app)** — Native Android client for sunnyconf: configure a sunnypilot device and browse drives over local WiFi. / sunnyconf 的原生 Android 客戶端：區網設定 sunnypilot 並瀏覽行程。
+- **[roadviewer-ha](https://github.com/Qualified4/roadviewer-ha)** — Home Assistant app to upload and replay openpilot logs with synced video, lanes and radar. / 上傳並重播 openpilot 日誌的 Home Assistant App，同步顯示影像、車道與雷達。
+- **[delamain](https://github.com/vonhex/delamain)** — Self-hosted AI vehicle companion for sunnypilot on comma hardware (voice and telemetry). / 給 comma 上 sunnypilot 的自架 AI 行車助手（語音與遙測）。
 
 ## Self-hosted backends & installers / 自架後端與安裝工具
 
