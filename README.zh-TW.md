@@ -71,6 +71,8 @@
 - **[c3-faux-touch-keyboard](https://github.com/nelsonjchen/c3-faux-touch-keyboard)** — 便宜巨集鍵盤韌體，代按 comma 3 螢幕。
 - **[mount-install-templates](https://github.com/ophwug/mount-install-templates)** — comma three／3X／four 安裝模板。
 - **[ars510-radar](https://github.com/ds-sebastian/ars510-radar)** — 解碼 RAV4 2022+ 等 Toyota 的 ARS510 前雷達並接入 openpilot。
+- **[edgepilot](https://github.com/cwal1220/edgepilot)** — 在 Sipeed MaixCAM2（AX630C NPU）上跑 openpilot 駕駛模型與橫向控制，搭配 Panda CAN。
+- **[End-To-End-Self-Driving](https://github.com/Sontran0118/End-To-End-Self-Driving)** — 在 Jetson Orin Nano 上跑 openpilot，透過自製 STM32F407 panda 控制 2023 Mazda CX-5。
 
 ## CAN、DBC 與資料工具
 
@@ -100,11 +102,13 @@
 - **[connect-killer](https://github.com/MoreTore/connect-killer)** — openpilot 連線功能的自架後端。
 - **[retropilot-server](https://github.com/florianbrede-ayet/retropilot-server)** — 替代 comma 後端與儀表板。
 - **[openpilot-installer-generator](https://github.com/sshane/openpilot-installer-generator)** — 產生自訂分支安裝程式。
+- **[comma-analytics](https://github.com/clickityclickclickclick/comma-analytics)** — 自架 Grafana 儀表板，分析 comma／openpilot 行程。
 
 ## 模型、訓練與研究
 
 - **[Openpilot-Deepdive](https://github.com/OpenDriveLab/Openpilot-Deepdive)** — 駕駛模型深入研究。
 - **[openpilot.distill](https://github.com/YassineYousfi/openpilot.distill)** — 用自己的行程蒸餾模型。
+- **[openpilot-local-finetune](https://github.com/klebeer/openpilot-local-finetune)** — 在筆電上用自己的行程微調 openpilot 駕駛模型。
 - **[comma10k-baseline](https://github.com/YassineYousfi/comma10k-baseline)** — comma10k 分割基準。
 - **[openpilot-pipeline](https://github.com/mbalesni/openpilot-pipeline)** — 端到端訓練流程。
 - **[openpilot-supercombo-model](https://github.com/MTammvee/openpilot-supercombo-model)** — 使用 supercombo ONNX 模型。

@@ -71,6 +71,8 @@ The projects people actually share. Everything below is the map around them, not
 - **[c3-faux-touch-keyboard](https://github.com/nelsonjchen/c3-faux-touch-keyboard)** — Cheap macro keyboard firmware to tap the comma 3 screen.
 - **[mount-install-templates](https://github.com/ophwug/mount-install-templates)** — Mount install templates for comma three / 3X / four.
 - **[ars510-radar](https://github.com/ds-sebastian/ars510-radar)** — Decoder and installer for the Continental ARS510 front radar on radar-ACC Toyotas (RAV4 2022+, C-HR, Yaris).
+- **[edgepilot](https://github.com/cwal1220/edgepilot)** — openpilot driving model and lateral control on a Sipeed MaixCAM2 (AX630C NPU), with Panda CAN.
+- **[End-To-End-Self-Driving](https://github.com/Sontran0118/End-To-End-Self-Driving)** — openpilot on Jetson Orin Nano for a 2023 Mazda CX-5 via a DIY STM32F407 panda.
 
 ## CAN, DBC & data tools
 
@@ -100,11 +102,13 @@ The projects people actually share. Everything below is the map around them, not
 - **[connect-killer](https://github.com/MoreTore/connect-killer)** — Self-hosted backend for openpilot connectivity.
 - **[retropilot-server](https://github.com/florianbrede-ayet/retropilot-server)** — Replacement for the comma backend and dashboard.
 - **[openpilot-installer-generator](https://github.com/sshane/openpilot-installer-generator)** — Generates custom fork installer binaries.
+- **[comma-analytics](https://github.com/clickityclickclickclick/comma-analytics)** — Self-hosted Grafana dashboard for comma / openpilot drives.
 
 ## Models, training & research
 
 - **[Openpilot-Deepdive](https://github.com/OpenDriveLab/Openpilot-Deepdive)** — Deep dive into the driving model.
 - **[openpilot.distill](https://github.com/YassineYousfi/openpilot.distill)** — Distill openpilot using your own drives.
+- **[openpilot-local-finetune](https://github.com/klebeer/openpilot-local-finetune)** — Fine-tune openpilot driving models on your own drives, on a laptop.
 - **[comma10k-baseline](https://github.com/YassineYousfi/comma10k-baseline)** — Segmentation baseline on comma10k.
 - **[openpilot-pipeline](https://github.com/mbalesni/openpilot-pipeline)** — End-to-end training pipeline for openpilot-style models.
 - **[openpilot-supercombo-model](https://github.com/MTammvee/openpilot-supercombo-model)** — Using the supercombo ONNX model.
