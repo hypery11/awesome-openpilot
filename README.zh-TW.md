@@ -96,6 +96,7 @@
 - **[sunnyconf-app](https://github.com/Falseclock/sunnyconf-app)** — sunnyconf 的原生 Android 客戶端：區網設定 sunnypilot 並瀏覽行程。
 - **[roadviewer-ha](https://github.com/Qualified4/roadviewer-ha)** — 上傳並重播 openpilot 日誌的 Home Assistant App，同步顯示影像、車道與雷達。
 - **[delamain](https://github.com/vonhex/delamain)** — 給 comma 上 sunnypilot 的自架 AI 行車助手（語音與遙測）。
+- **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — 給 Fisker Ocean 中控螢幕的 Tesla 風格 HUD，由跑 sunnypilot 的 comma 裝置即時供資料。
 
 ## 自架後端與安裝工具
 
@@ -109,6 +110,8 @@
 - **[Openpilot-Deepdive](https://github.com/OpenDriveLab/Openpilot-Deepdive)** — 駕駛模型深入研究。
 - **[openpilot.distill](https://github.com/YassineYousfi/openpilot.distill)** — 用自己的行程蒸餾模型。
 - **[openpilot-local-finetune](https://github.com/klebeer/openpilot-local-finetune)** — 在筆電上用自己的行程微調 openpilot 駕駛模型。
+- **[openpilot_carla_model_finetuner](https://github.com/jagoff2/openpilot_carla_model_finetuner)** — 在 CARLA 收集置中行駛樣本、微調 openpilot 駕駛模型並匯出到 comma 3X。
+- **[openpilot-desktop](https://github.com/luzijun360/openpilot-desktop)** — 在 Mac 或 Windows 上對行車影片跑 openpilot 駕駛模型，疊出 comma 同款車道線與路徑。
 - **[comma10k-baseline](https://github.com/YassineYousfi/comma10k-baseline)** — comma10k 分割基準。
 - **[openpilot-pipeline](https://github.com/mbalesni/openpilot-pipeline)** — 端到端訓練流程。
 - **[openpilot-supercombo-model](https://github.com/MTammvee/openpilot-supercombo-model)** — 使用 supercombo ONNX 模型。
