@@ -84,6 +84,7 @@
 - **[OpenpilotToolkit](https://github.com/spektor56/OpenpilotToolkit)** — 與 openpilot 裝置互動的工具組。
 - **[pandacapture](https://github.com/suburbazine/pandacapture)** — 用 comma Red／Black Panda 擷取 CAN、即時儀表與刷韌體。
 - **[AutoDistill](https://github.com/bbbenji/AutoDistill)** — 從 CAN 擷取自動逆向、產生 openpilot 車款移植。
+- **[panda-socketcan](https://github.com/I-CAN-hack/panda-socketcan)** — 給 comma.ai White／Black／Red panda 的 CANnectivity 韌體，透過 Linux 內建 gs_usb 驅動以 SocketCAN 使用其 CAN 通道。
 
 ## 行車紀錄、UI 與周邊
 

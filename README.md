@@ -84,6 +84,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[OpenpilotToolkit](https://github.com/spektor56/OpenpilotToolkit)** — Toolkit and library for interacting with openpilot devices.
 - **[pandacapture](https://github.com/suburbazine/pandacapture)** — CAN capture, live dashboard and firmware flashing for comma Red / Black Panda.
 - **[AutoDistill](https://github.com/bbbenji/AutoDistill)** — Automatic CAN reverse engineering for openpilot car ports from captures.
+- **[panda-socketcan](https://github.com/I-CAN-hack/panda-socketcan)** — CANnectivity firmware for comma.ai White, Black and Red pandas that exposes their CAN channels through Linux's gs_usb SocketCAN driver.
 
 ## Dashcam, UI & companions
 
