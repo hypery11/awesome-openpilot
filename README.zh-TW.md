@@ -113,6 +113,7 @@
 - **[openpilot-local-finetune](https://github.com/klebeer/openpilot-local-finetune)** — 在筆電上用自己的行程微調 openpilot 駕駛模型。
 - **[openpilot_carla_model_finetuner](https://github.com/jagoff2/openpilot_carla_model_finetuner)** — 在 CARLA 收集置中行駛樣本、微調 openpilot 駕駛模型並匯出到 comma 3X。
 - **[openpilot-desktop](https://github.com/luzijun360/openpilot-desktop)** — 在 Mac 或 Windows 上對行車影片跑 openpilot 駕駛模型，疊出 comma 同款車道線與路徑。
+- **[mqb-eps-research](https://github.com/brendanballon/mqb-eps-research)** — 研究 VW MQB 電動輔助轉向韌體，想提升 openpilot 的轉向力道與反應；目前仍是離線研究，尚無實車驗證的修改。
 - **[comma10k-baseline](https://github.com/YassineYousfi/comma10k-baseline)** — comma10k 分割基準。
 - **[openpilot-pipeline](https://github.com/mbalesni/openpilot-pipeline)** — 端到端訓練流程。
 - **[openpilot-supercombo-model](https://github.com/MTammvee/openpilot-supercombo-model)** — 使用 supercombo ONNX 模型。
