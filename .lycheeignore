@@ -1,0 +1,10 @@
+# Sites that block or rate-limit automated checkers
+^https?://(www\.)?(x|twitter)\.com/
+^https?://(www\.)?facebook\.com/
+^https?://(www\.)?reddit\.com/
+^https?://(www\.)?linkedin\.com/
+^https?://discord\.(com|gg)/
+^https?://discord\.comma\.ai
+^https?://(www\.)?makerworld\.com/
+^https?://(www\.)?bambulab\.com/
+^https?://(www\.)?ko-fi\.com/

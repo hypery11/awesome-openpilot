@@ -1,0 +1,36 @@
+name: Link check
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"   # Mondays 03:17 UTC
+  pull_request:
+    paths:
+      - "README*.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links in README files
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # 429 (rate limited) counts as OK so throttling never fails the run.
+          # Sites that block bots are listed in .lycheeignore.
+          args: >-
+            --no-progress
+            --accept 200..=299,429
+            --max-retries 3
+            --retry-wait-time 5
+            --timeout 30
+            --max-concurrency 8
+            README.md README.zh-TW.md
+          fail: true
+          jobSummary: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

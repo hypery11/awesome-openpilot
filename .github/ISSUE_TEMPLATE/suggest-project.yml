@@ -1,0 +1,53 @@
+name: Suggest a project
+description: Suggest a project or resource for Awesome openpilot. 推薦一個專案或資源。
+title: "[Suggest] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Please check the project isn't already in [README.md](https://github.com/hypery11/awesome-openpilot/blob/main/README.md) first.
+        感謝推薦！送出前請先確認清單裡還沒有這個專案。
+  - type: input
+    id: url
+    attributes:
+      label: Repository or resource URL / 連結
+      description: Link straight to the project (the GitHub repository for open-source projects).
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category / 分類
+      options:
+        - "Core (comma.ai)"
+        - "Forks & distributions"
+        - "Hardware & ports"
+        - "CAN, DBC & data tools"
+        - "Dashcam, UI & companions"
+        - "Self-hosted backends & installers"
+        - "Models, training & research"
+        - "Docs & learning"
+        - "Closed-source / commercial (for reference)"
+        - "Other / not sure"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it fits / 推薦理由
+      description: What does it do, and why is it useful to people working with openpilot? One or two sentences is enough.
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Suggested one-line description (optional) / 建議的一行描述（選填）
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks / 確認
+      options:
+        - label: It's not already listed. / 清單裡還沒有。
+          required: true
+        - label: I maintain this project. / 我是這個專案的維護者。

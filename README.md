@@ -1,5 +1,9 @@
 # Awesome openpilot [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+![Awesome openpilot](assets/banner.png)
+
+[![Entries](https://img.shields.io/badge/entries-66-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--21-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+
 English | [繁體中文](README.zh-TW.md)
 
 > A curated map of the openpilot ecosystem: forks, car ports, CAN/DBC tools, hardware, data tools, models and docs.
@@ -22,8 +26,35 @@ The projects people actually share. Everything below is the map around them, not
 
 ---
 
+## New this week
+
+Added between 2026-10-15 and 2026-10-21 (derived from git history).
+
+- **[edgepilot](https://github.com/cwal1220/edgepilot)** — openpilot driving model and lateral control on a Sipeed MaixCAM2 (AX630C NPU), with Panda CAN. _(Hardware & ports)_
+- **[End-To-End-Self-Driving](https://github.com/Sontran0118/End-To-End-Self-Driving)** — openpilot on Jetson Orin Nano for a 2023 Mazda CX-5 via a DIY STM32F407 panda. _(Hardware & ports)_
+- **[AutoDistill](https://github.com/bbbenji/AutoDistill)** — Automatic CAN reverse engineering for openpilot car ports from captures. _(CAN, DBC & data tools)_
+- **[panda-socketcan](https://github.com/I-CAN-hack/panda-socketcan)** — CANnectivity firmware for comma.ai White, Black and Red pandas that exposes their CAN channels through Linux's gs_usb SocketCAN driver. _(CAN, DBC & data tools)_
+- **[sunnyconf-app](https://github.com/Falseclock/sunnyconf-app)** — Native Android client for sunnyconf: configure a sunnypilot device and browse drives over local WiFi. _(Dashcam, UI & companions)_
+- **[roadviewer-ha](https://github.com/Qualified4/roadviewer-ha)** — Home Assistant app to upload and replay openpilot logs with synced video, lanes and radar. _(Dashcam, UI & companions)_
+- **[delamain](https://github.com/vonhex/delamain)** — Self-hosted AI vehicle companion for sunnypilot on comma hardware (voice and telemetry). _(Dashcam, UI & companions)_
+- **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — Tesla-style HUD for the Fisker Ocean center screen, fed live by a comma device running sunnypilot. _(Dashcam, UI & companions)_
+
+<details>
+<summary>5 more added this week</summary>
+
+- **[comma-analytics](https://github.com/clickityclickclickclick/comma-analytics)** — Self-hosted Grafana dashboard for comma / openpilot drives. _(Self-hosted backends & installers)_
+- **[openpilot-local-finetune](https://github.com/klebeer/openpilot-local-finetune)** — Fine-tune openpilot driving models on your own drives, on a laptop. _(Models, training & research)_
+- **[openpilot_carla_model_finetuner](https://github.com/jagoff2/openpilot_carla_model_finetuner)** — Collect lane-centering examples in CARLA, fine-tune openpilot driving models and export them for comma 3X. _(Models, training & research)_
+- **[openpilot-desktop](https://github.com/luzijun360/openpilot-desktop)** — Run the openpilot driving model on a dashcam video on Mac or Windows, with comma-style lane and path overlays. _(Models, training & research)_
+- **[mqb-eps-research](https://github.com/brendanballon/mqb-eps-research)** — Offline research into VW MQB power-steering firmware to improve openpilot steering authority and response; no vehicle-tested change yet. _(Models, training & research)_
+
+</details>
+
+---
+
 ## Contents
 
+- [At a glance](#at-a-glance)
 - [Core (comma.ai)](#core-commaai)
 - [Forks & distributions](#forks--distributions)
 - [Hardware & ports](#hardware--ports)
@@ -38,6 +69,20 @@ The projects people actually share. Everything below is the map around them, not
 - [License](#license)
 
 ---
+
+## At a glance
+
+### Major forks
+
+Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so check the project itself before installing.
+
+| Project | Relationship to openpilot | License (GitHub) | Devices named in README | Install / docs |
+|---|---|---|---|---|
+| [openpilot](https://github.com/commaai/openpilot) | Upstream (comma.ai) | MIT | comma four; comma 3X branches listed | Install URL `openpilot.comma.ai` · [docs.comma.ai](https://docs.comma.ai) |
+| [sunnypilot](https://github.com/sunnypilot/sunnypilot) | Fork of openpilot | MIT | Not stated | [docs.sunnypilot.ai](https://docs.sunnypilot.ai/) · [community forum](https://community.sunnypilot.ai/) |
+| [FrogPilot](https://github.com/FrogAi/FrogPilot) | Community-driven fork | MIT | comma 3 / 3X | Install URL `frogpilot.download` · [FrogPilot wiki](https://frogpilot.com/wiki/) |
+| [dragonpilot](https://github.com/dragonpilot/dragonpilot) | Built on openpilot | MIT | comma 3 / 3X and O3 / O3L / O3XL; EON / C2 on the `d2` branch | [English README](https://github.com/dragonpilot/dragonpilot/blob/pre-build/README_EN.md) |
+| [StarPilot](https://github.com/firestar5683/StarPilot) | Custom fork | MIT; README notes adapted sunnypilot code under a custom notice | comma 3, 3X and 4 | [wiki.firestar.link](https://wiki.firestar.link) |
 
 ## Core (comma.ai)
 
@@ -140,6 +185,8 @@ The projects people actually share. Everything below is the map around them, not
 ## Contributing
 
 Open a PR or issue. One line per entry, open-source and on-topic, link to the repo, no star counts. Closed-source/commercial only in the reference section.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full rules, or [suggest a project](https://github.com/hypery11/awesome-openpilot/issues/new?template=suggest-project.yml) with the issue form.
 
 ## License
 

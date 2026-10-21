@@ -1,0 +1,25 @@
+name: Archived repo scan
+
+on:
+  schedule:
+    - cron: "41 2 * * 1"   # Mondays 02:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: archived-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check every github.com/owner/repo link in README.md
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/archived_scan.py
