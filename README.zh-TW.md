@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-66-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--21-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-67-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--26-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,27 +28,11 @@
 
 ## 本週新增
 
-2026-10-15 至 2026-10-21 新增的條目（依 git 紀錄整理）。
+2026-10-20 至 2026-10-26 新增的條目（依 git 紀錄整理）。
 
-- **[edgepilot](https://github.com/cwal1220/edgepilot)** — 在 Sipeed MaixCAM2（AX630C NPU）上跑 openpilot 駕駛模型與橫向控制，搭配 Panda CAN。 _(硬體與移植)_
-- **[End-To-End-Self-Driving](https://github.com/Sontran0118/End-To-End-Self-Driving)** — 在 Jetson Orin Nano 上跑 openpilot，透過自製 STM32F407 panda 控制 2023 Mazda CX-5。 _(硬體與移植)_
-- **[AutoDistill](https://github.com/bbbenji/AutoDistill)** — 從 CAN 擷取自動逆向、產生 openpilot 車款移植。 _(CAN、DBC 與資料工具)_
 - **[panda-socketcan](https://github.com/I-CAN-hack/panda-socketcan)** — 給 comma.ai White／Black／Red panda 的 CANnectivity 韌體，透過 Linux 內建 gs_usb 驅動以 SocketCAN 使用其 CAN 通道。 _(CAN、DBC 與資料工具)_
-- **[sunnyconf-app](https://github.com/Falseclock/sunnyconf-app)** — sunnyconf 的原生 Android 客戶端：區網設定 sunnypilot 並瀏覽行程。 _(行車紀錄、UI 與周邊)_
-- **[roadviewer-ha](https://github.com/Qualified4/roadviewer-ha)** — 上傳並重播 openpilot 日誌的 Home Assistant App，同步顯示影像、車道與雷達。 _(行車紀錄、UI 與周邊)_
-- **[delamain](https://github.com/vonhex/delamain)** — 給 comma 上 sunnypilot 的自架 AI 行車助手（語音與遙測）。 _(行車紀錄、UI 與周邊)_
-- **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — 給 Fisker Ocean 中控螢幕的 Tesla 風格 HUD，由跑 sunnypilot 的 comma 裝置即時供資料。 _(行車紀錄、UI 與周邊)_
-
-<details>
-<summary>本週另外新增 5 條</summary>
-
-- **[comma-analytics](https://github.com/clickityclickclickclick/comma-analytics)** — 自架 Grafana 儀表板，分析 comma／openpilot 行程。 _(自架後端與安裝工具)_
-- **[openpilot-local-finetune](https://github.com/klebeer/openpilot-local-finetune)** — 在筆電上用自己的行程微調 openpilot 駕駛模型。 _(模型、訓練與研究)_
-- **[openpilot_carla_model_finetuner](https://github.com/jagoff2/openpilot_carla_model_finetuner)** — 在 CARLA 收集置中行駛樣本、微調 openpilot 駕駛模型並匯出到 comma 3X。 _(模型、訓練與研究)_
-- **[openpilot-desktop](https://github.com/luzijun360/openpilot-desktop)** — 在 Mac 或 Windows 上對行車影片跑 openpilot 駕駛模型，疊出 comma 同款車道線與路徑。 _(模型、訓練與研究)_
+- **[openpilot.perception](https://github.com/cristianku/openpilot.perception)** — 從 comma 裝置的道路影像做 3D 物件感知與定位，獨立於 openpilot 駕駛模型訓練。 _(模型、訓練與研究)_
 - **[mqb-eps-research](https://github.com/brendanballon/mqb-eps-research)** — 研究 VW MQB 電動輔助轉向韌體，想提升 openpilot 的轉向力道與反應；目前仍是離線研究，尚無實車驗證的修改。 _(模型、訓練與研究)_
-
-</details>
 
 ---
 
@@ -155,6 +139,7 @@
 
 - **[Openpilot-Deepdive](https://github.com/OpenDriveLab/Openpilot-Deepdive)** — 駕駛模型深入研究。
 - **[openpilot.distill](https://github.com/YassineYousfi/openpilot.distill)** — 用自己的行程蒸餾模型。
+- **[openpilot.perception](https://github.com/cristianku/openpilot.perception)** — 從 comma 裝置的道路影像做 3D 物件感知與定位，獨立於 openpilot 駕駛模型訓練。
 - **[openpilot-local-finetune](https://github.com/klebeer/openpilot-local-finetune)** — 在筆電上用自己的行程微調 openpilot 駕駛模型。
 - **[openpilot_carla_model_finetuner](https://github.com/jagoff2/openpilot_carla_model_finetuner)** — 在 CARLA 收集置中行駛樣本、微調 openpilot 駕駛模型並匯出到 comma 3X。
 - **[openpilot-desktop](https://github.com/luzijun360/openpilot-desktop)** — 在 Mac 或 Windows 上對行車影片跑 openpilot 駕駛模型，疊出 comma 同款車道線與路徑。
