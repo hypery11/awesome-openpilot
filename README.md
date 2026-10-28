@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-67-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--26-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-69-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--28-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,11 +28,11 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-10-20 and 2026-10-26 (derived from git history).
+Added between 2026-10-22 and 2026-10-28 (derived from git history).
 
-- **[panda-socketcan](https://github.com/I-CAN-hack/panda-socketcan)** — CANnectivity firmware for comma.ai White, Black and Red pandas that exposes their CAN channels through Linux's gs_usb SocketCAN driver. _(CAN, DBC & data tools)_
+- **[xpilot](https://github.com/onemiless/xpilot)** — Tesla-only sunnypilot fork that adds behavior through a plugin host and an on-device plugin store; targets comma 3, 3X, 3XL and four. _(Forks & distributions)_
+- **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car. _(Hardware & ports)_
 - **[openpilot.perception](https://github.com/cristianku/openpilot.perception)** — Spatial (3D) object perception from a comma device's road video, trained independently of the openpilot driving model. _(Models, training & research)_
-- **[mqb-eps-research](https://github.com/brendanballon/mqb-eps-research)** — Offline research into VW MQB power-steering firmware to improve openpilot steering authority and response; no vehicle-tested change yet. _(Models, training & research)_
 
 ---
 
@@ -66,7 +66,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 | [sunnypilot](https://github.com/sunnypilot/sunnypilot) | Fork of openpilot | MIT | Not stated | [docs.sunnypilot.ai](https://docs.sunnypilot.ai/) · [community forum](https://community.sunnypilot.ai/) |
 | [FrogPilot](https://github.com/FrogAi/FrogPilot) | Community-driven fork | MIT | comma 3 / 3X | Install URL `frogpilot.download` · [FrogPilot wiki](https://frogpilot.com/wiki/) |
 | [dragonpilot](https://github.com/dragonpilot/dragonpilot) | Built on openpilot | MIT | comma 3 / 3X and O3 / O3L / O3XL; EON / C2 on the `d2` branch | [English README](https://github.com/dragonpilot/dragonpilot/blob/pre-build/README_EN.md) |
-| [StarPilot](https://github.com/firestar5683/StarPilot) | Custom fork | MIT; README notes adapted sunnypilot code under a custom notice | comma 3, 3X and 4 | [wiki.firestar.link](https://wiki.firestar.link) |
+| [StarPilot](https://github.com/StarPilotHQ/StarPilot) | Custom fork | MIT; README notes adapted sunnypilot code under a custom notice | comma 3, 3X and 4 | [wiki.firestar.link](https://wiki.firestar.link) |
 
 ## Core (comma.ai)
 
@@ -82,7 +82,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[FrogPilot](https://github.com/FrogAi/FrogPilot)** — Customizable community fork.
 - **[FrogPilot-Resources](https://github.com/FrogAi/FrogPilot-Resources)** — Models, themes and assets FrogPilot downloads.
 - **[dragonpilot](https://github.com/dragonpilot/dragonpilot)** — openpilot-based driver assistance fork.
-- **[StarPilot](https://github.com/firestar5683/StarPilot)** — Monthly-updated open-source fork.
+- **[StarPilot](https://github.com/StarPilotHQ/StarPilot)** — Monthly-updated open-source fork.
 - **[openpilot](https://github.com/j-vanetten/openpilot)** — jvePilot: FCA/Stellantis hybrid openpilot + ACC.
 - **[openpilot](https://github.com/BogGyver/openpilot)** — Fork for pre-AP / AP1 / AP2 Tesla cars.
 - **[zoompilot](https://github.com/zoompilot/zoompilot)** — Driver assistance fork focused on Mazda.
@@ -90,6 +90,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[openpilot](https://github.com/kisapilot/openpilot)** — Community fork (Korea).
 - **[openpilot](https://github.com/jixiexiaoge/openpilot)** — Merges features from several forks.
 - **[flowpilot](https://github.com/flowdriveai/flowpilot)** — openpilot-based system that runs on Android phones.
+- **[xpilot](https://github.com/onemiless/xpilot)** — Tesla-only sunnypilot fork that adds behavior through a plugin host and an on-device plugin store; targets comma 3, 3X, 3XL and four.
 
 ## Hardware & ports
 
@@ -102,6 +103,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[ars510-radar](https://github.com/ds-sebastian/ars510-radar)** — Decoder and installer for the Continental ARS510 front radar on radar-ACC Toyotas (RAV4 2022+, C-HR, Yaris).
 - **[edgepilot](https://github.com/cwal1220/edgepilot)** — openpilot driving model and lateral control on a Sipeed MaixCAM2 (AX630C NPU), with Panda CAN.
 - **[End-To-End-Self-Driving](https://github.com/Sontran0118/End-To-End-Self-Driving)** — openpilot on Jetson Orin Nano for a 2023 Mazda CX-5 via a DIY STM32F407 panda.
+- **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car.
 
 ## CAN, DBC & data tools
 

@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-67-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--26-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-69-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--28-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,11 +28,11 @@
 
 ## 本週新增
 
-2026-10-20 至 2026-10-26 新增的條目（依 git 紀錄整理）。
+2026-10-22 至 2026-10-28 新增的條目（依 git 紀錄整理）。
 
-- **[panda-socketcan](https://github.com/I-CAN-hack/panda-socketcan)** — 給 comma.ai White／Black／Red panda 的 CANnectivity 韌體，透過 Linux 內建 gs_usb 驅動以 SocketCAN 使用其 CAN 通道。 _(CAN、DBC 與資料工具)_
+- **[xpilot](https://github.com/onemiless/xpilot)** — 只支援 Tesla 的 sunnypilot 衍生版，透過插件宿主與裝置上的插件商店擴充功能；支援 comma 3、3X、3XL 與 four。 _(分支與發行版)_
+- **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。 _(硬體與移植)_
 - **[openpilot.perception](https://github.com/cristianku/openpilot.perception)** — 從 comma 裝置的道路影像做 3D 物件感知與定位，獨立於 openpilot 駕駛模型訓練。 _(模型、訓練與研究)_
-- **[mqb-eps-research](https://github.com/brendanballon/mqb-eps-research)** — 研究 VW MQB 電動輔助轉向韌體，想提升 openpilot 的轉向力道與反應；目前仍是離線研究，尚無實車驗證的修改。 _(模型、訓練與研究)_
 
 ---
 
@@ -66,7 +66,7 @@
 | [sunnypilot](https://github.com/sunnypilot/sunnypilot) | openpilot 的分支 | MIT | 未載明 | [docs.sunnypilot.ai](https://docs.sunnypilot.ai/) · [社群論壇](https://community.sunnypilot.ai/) |
 | [FrogPilot](https://github.com/FrogAi/FrogPilot) | 社群主導的分支 | MIT | comma 3／3X | 安裝網址 `frogpilot.download` · [FrogPilot wiki](https://frogpilot.com/wiki/) |
 | [dragonpilot](https://github.com/dragonpilot/dragonpilot) | 以 openpilot 為基礎 | MIT | comma 3／3X 與 O3／O3L／O3XL；EON／C2 在 `d2` 分支 | [英文版 README](https://github.com/dragonpilot/dragonpilot/blob/pre-build/README_EN.md) |
-| [StarPilot](https://github.com/firestar5683/StarPilot) | 自訂分支 | MIT；README 註明部分改編自 sunnypilot 的程式碼另有自訂授權聲明 | comma 3、3X、4 | [wiki.firestar.link](https://wiki.firestar.link) |
+| [StarPilot](https://github.com/StarPilotHQ/StarPilot) | 自訂分支 | MIT；README 註明部分改編自 sunnypilot 的程式碼另有自訂授權聲明 | comma 3、3X、4 | [wiki.firestar.link](https://wiki.firestar.link) |
 
 ## 官方核心（comma.ai）
 
@@ -82,7 +82,7 @@
 - **[FrogPilot](https://github.com/FrogAi/FrogPilot)** — 可自訂的社群分支。
 - **[FrogPilot-Resources](https://github.com/FrogAi/FrogPilot-Resources)** — FrogPilot 下載的模型、主題等資源。
 - **[dragonpilot](https://github.com/dragonpilot/dragonpilot)** — openpilot 衍生分支。
-- **[StarPilot](https://github.com/firestar5683/StarPilot)** — 每月更新的開源分支。
+- **[StarPilot](https://github.com/StarPilotHQ/StarPilot)** — 每月更新的開源分支。
 - **[openpilot](https://github.com/j-vanetten/openpilot)** — jvePilot：FCA 車款混合 ACC。
 - **[openpilot](https://github.com/BogGyver/openpilot)** — 給 pre-AP／AP1／AP2 Tesla 的分支。
 - **[zoompilot](https://github.com/zoompilot/zoompilot)** — 以 Mazda 為主的分支。
@@ -90,6 +90,7 @@
 - **[openpilot](https://github.com/kisapilot/openpilot)** — 韓國社群分支。
 - **[openpilot](https://github.com/jixiexiaoge/openpilot)** — 整合多個分支功能。
 - **[flowpilot](https://github.com/flowdriveai/flowpilot)** — 可在 Android 手機執行的衍生系統。
+- **[xpilot](https://github.com/onemiless/xpilot)** — 只支援 Tesla 的 sunnypilot 衍生版，透過插件宿主與裝置上的插件商店擴充功能；支援 comma 3、3X、3XL 與 four。
 
 ## 硬體與移植
 
@@ -102,6 +103,7 @@
 - **[ars510-radar](https://github.com/ds-sebastian/ars510-radar)** — 解碼 RAV4 2022+ 等 Toyota 的 ARS510 前雷達並接入 openpilot。
 - **[edgepilot](https://github.com/cwal1220/edgepilot)** — 在 Sipeed MaixCAM2（AX630C NPU）上跑 openpilot 駕駛模型與橫向控制，搭配 Panda CAN。
 - **[End-To-End-Self-Driving](https://github.com/Sontran0118/End-To-End-Self-Driving)** — 在 Jetson Orin Nano 上跑 openpilot，透過自製 STM32F407 panda 控制 2023 Mazda CX-5。
+- **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。
 
 ## CAN、DBC 與資料工具
 
