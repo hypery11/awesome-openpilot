@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-69-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--28-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-71-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--30-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,10 +28,13 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-10-22 and 2026-10-28 (derived from git history).
+Added between 2026-10-24 and 2026-10-30 (derived from git history).
 
+- **[StarPilot](https://github.com/StarPilotHQ/StarPilot)** — Monthly-updated open-source fork. _(Forks & distributions)_
 - **[xpilot](https://github.com/onemiless/xpilot)** — Tesla-only sunnypilot fork that adds behavior through a plugin host and an on-device plugin store; targets comma 3, 3X, 3XL and four. _(Forks & distributions)_
 - **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car. _(Hardware & ports)_
+- **[openpilot_ros2_bridge](https://github.com/jkk-research/openpilot_ros2_bridge)** — ROS 2 (Jazzy) bridge for comma 3/3X and comma four devices running openpilot, run on a vehicle PC from a prebuilt Docker image or a local install. _(CAN, DBC & data tools)_
+- **[navdy-hud](https://github.com/geniuth/navdy-hud)** — Android app that runs on a rooted Navdy HUD and draws lanes, lead car, speed cameras and blind spots from driving data a comma device sends over Bluetooth, with no phone in between; README in Korean. _(Dashcam, UI & companions)_
 - **[openpilot.perception](https://github.com/cristianku/openpilot.perception)** — Spatial (3D) object perception from a comma device's road video, trained independently of the openpilot driving model. _(Models, training & research)_
 
 ---
@@ -116,6 +119,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[pandacapture](https://github.com/suburbazine/pandacapture)** — CAN capture, live dashboard and firmware flashing for comma Red / Black Panda.
 - **[AutoDistill](https://github.com/bbbenji/AutoDistill)** — Automatic CAN reverse engineering for openpilot car ports from captures.
 - **[panda-socketcan](https://github.com/I-CAN-hack/panda-socketcan)** — CANnectivity firmware for comma.ai White, Black and Red pandas that exposes their CAN channels through Linux's gs_usb SocketCAN driver.
+- **[openpilot_ros2_bridge](https://github.com/jkk-research/openpilot_ros2_bridge)** — ROS 2 (Jazzy) bridge for comma 3/3X and comma four devices running openpilot, run on a vehicle PC from a prebuilt Docker image or a local install.
 
 ## Dashcam, UI & companions
 
@@ -129,6 +133,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[roadviewer-ha](https://github.com/Qualified4/roadviewer-ha)** — Home Assistant app to upload and replay openpilot logs with synced video, lanes and radar.
 - **[delamain](https://github.com/vonhex/delamain)** — Self-hosted AI vehicle companion for sunnypilot on comma hardware (voice and telemetry).
 - **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — Tesla-style HUD for the Fisker Ocean center screen, fed live by a comma device running sunnypilot.
+- **[navdy-hud](https://github.com/geniuth/navdy-hud)** — Android app that runs on a rooted Navdy HUD and draws lanes, lead car, speed cameras and blind spots from driving data a comma device sends over Bluetooth, with no phone in between; README in Korean.
 
 ## Self-hosted backends & installers
 

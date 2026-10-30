@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-69-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--28-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-71-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--30-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,10 +28,13 @@
 
 ## 本週新增
 
-2026-10-22 至 2026-10-28 新增的條目（依 git 紀錄整理）。
+2026-10-24 至 2026-10-30 新增的條目（依 git 紀錄整理）。
 
+- **[StarPilot](https://github.com/StarPilotHQ/StarPilot)** — 每月更新的開源分支。 _(分支與發行版)_
 - **[xpilot](https://github.com/onemiless/xpilot)** — 只支援 Tesla 的 sunnypilot 衍生版，透過插件宿主與裝置上的插件商店擴充功能；支援 comma 3、3X、3XL 與 four。 _(分支與發行版)_
 - **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。 _(硬體與移植)_
+- **[openpilot_ros2_bridge](https://github.com/jkk-research/openpilot_ros2_bridge)** — 給跑 openpilot 的 comma 3/3X 與 comma four 裝置用的 ROS 2（Jazzy）橋接，在車上電腦以預建 Docker 映像或本機安裝執行。 _(CAN、DBC 與資料工具)_
+- **[navdy-hud](https://github.com/geniuth/navdy-hud)** — 直接在已 root 的 Navdy HUD 上執行的 Android App，接收 comma 裝置經藍牙送出的行車資料，在 HUD 上畫出車道、前車、測速照相與盲點，不經過手機；README 為韓文。 _(行車紀錄、UI 與周邊)_
 - **[openpilot.perception](https://github.com/cristianku/openpilot.perception)** — 從 comma 裝置的道路影像做 3D 物件感知與定位，獨立於 openpilot 駕駛模型訓練。 _(模型、訓練與研究)_
 
 ---
@@ -116,6 +119,7 @@
 - **[pandacapture](https://github.com/suburbazine/pandacapture)** — 用 comma Red／Black Panda 擷取 CAN、即時儀表與刷韌體。
 - **[AutoDistill](https://github.com/bbbenji/AutoDistill)** — 從 CAN 擷取自動逆向、產生 openpilot 車款移植。
 - **[panda-socketcan](https://github.com/I-CAN-hack/panda-socketcan)** — 給 comma.ai White／Black／Red panda 的 CANnectivity 韌體，透過 Linux 內建 gs_usb 驅動以 SocketCAN 使用其 CAN 通道。
+- **[openpilot_ros2_bridge](https://github.com/jkk-research/openpilot_ros2_bridge)** — 給跑 openpilot 的 comma 3/3X 與 comma four 裝置用的 ROS 2（Jazzy）橋接，在車上電腦以預建 Docker 映像或本機安裝執行。
 
 ## 行車紀錄、UI 與周邊
 
@@ -129,6 +133,7 @@
 - **[roadviewer-ha](https://github.com/Qualified4/roadviewer-ha)** — 上傳並重播 openpilot 日誌的 Home Assistant App，同步顯示影像、車道與雷達。
 - **[delamain](https://github.com/vonhex/delamain)** — 給 comma 上 sunnypilot 的自架 AI 行車助手（語音與遙測）。
 - **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — 給 Fisker Ocean 中控螢幕的 Tesla 風格 HUD，由跑 sunnypilot 的 comma 裝置即時供資料。
+- **[navdy-hud](https://github.com/geniuth/navdy-hud)** — 直接在已 root 的 Navdy HUD 上執行的 Android App，接收 comma 裝置經藍牙送出的行車資料，在 HUD 上畫出車道、前車、測速照相與盲點，不經過手機；README 為韓文。
 
 ## 自架後端與安裝工具
 
