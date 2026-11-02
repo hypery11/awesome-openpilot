@@ -32,7 +32,7 @@
 
 - **[StarPilot](https://github.com/StarPilotHQ/StarPilot)** — 每月更新的開源分支。 _(分支與發行版)_
 - **[xpilot](https://github.com/onemiless/xpilot)** — 只支援 Tesla 的 sunnypilot 衍生版，透過插件宿主與裝置上的插件商店擴充功能；支援 comma 3、3X、3XL 與 four。 _(分支與發行版)_
-- **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。 _(硬體與移植)_
+- **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。 _(硬體與移植)_
 - **[openpilot_ros2_bridge](https://github.com/jkk-research/openpilot_ros2_bridge)** — 給跑 openpilot 的 comma 3/3X 與 comma four 裝置用的 ROS 2（Jazzy）橋接，在車上電腦以預建 Docker 映像或本機安裝執行。 _(CAN、DBC 與資料工具)_
 - **[navdy-hud](https://github.com/geniuth/navdy-hud)** — 直接在已 root 的 Navdy HUD 上執行的 Android App，接收 comma 裝置經藍牙送出的行車資料，在 HUD 上畫出車道、前車、測速照相與盲點，不經過手機；README 為韓文。 _(行車紀錄、UI 與周邊)_
 - **[openpilot.perception](https://github.com/cristianku/openpilot.perception)** — 從 comma 裝置的道路影像做 3D 物件感知與定位，獨立於 openpilot 駕駛模型訓練。 _(模型、訓練與研究)_
@@ -106,7 +106,7 @@
 - **[ars510-radar](https://github.com/ds-sebastian/ars510-radar)** — 解碼 RAV4 2022+ 等 Toyota 的 ARS510 前雷達並接入 openpilot。
 - **[edgepilot](https://github.com/cwal1220/edgepilot)** — 在 Sipeed MaixCAM2（AX630C NPU）上跑 openpilot 駕駛模型與橫向控制，搭配 Panda CAN。
 - **[End-To-End-Self-Driving](https://github.com/Sontran0118/End-To-End-Self-Driving)** — 在 Jetson Orin Nano 上跑 openpilot，透過自製 STM32F407 panda 控制 2023 Mazda CX-5。
-- **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。
+- **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。
 
 ## CAN、DBC 與資料工具
 

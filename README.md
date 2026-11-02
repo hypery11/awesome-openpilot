@@ -32,7 +32,7 @@ Added between 2026-10-24 and 2026-10-30 (derived from git history).
 
 - **[StarPilot](https://github.com/StarPilotHQ/StarPilot)** — Monthly-updated open-source fork. _(Forks & distributions)_
 - **[xpilot](https://github.com/onemiless/xpilot)** — Tesla-only sunnypilot fork that adds behavior through a plugin host and an on-device plugin store; targets comma 3, 3X, 3XL and four. _(Forks & distributions)_
-- **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car. _(Hardware & ports)_
+- **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car. _(Hardware & ports)_
 - **[openpilot_ros2_bridge](https://github.com/jkk-research/openpilot_ros2_bridge)** — ROS 2 (Jazzy) bridge for comma 3/3X and comma four devices running openpilot, run on a vehicle PC from a prebuilt Docker image or a local install. _(CAN, DBC & data tools)_
 - **[navdy-hud](https://github.com/geniuth/navdy-hud)** — Android app that runs on a rooted Navdy HUD and draws lanes, lead car, speed cameras and blind spots from driving data a comma device sends over Bluetooth, with no phone in between; README in Korean. _(Dashcam, UI & companions)_
 - **[openpilot.perception](https://github.com/cristianku/openpilot.perception)** — Spatial (3D) object perception from a comma device's road video, trained independently of the openpilot driving model. _(Models, training & research)_
@@ -106,7 +106,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[ars510-radar](https://github.com/ds-sebastian/ars510-radar)** — Decoder and installer for the Continental ARS510 front radar on radar-ACC Toyotas (RAV4 2022+, C-HR, Yaris).
 - **[edgepilot](https://github.com/cwal1220/edgepilot)** — openpilot driving model and lateral control on a Sipeed MaixCAM2 (AX630C NPU), with Panda CAN.
 - **[End-To-End-Self-Driving](https://github.com/Sontran0118/End-To-End-Self-Driving)** — openpilot on Jetson Orin Nano for a 2023 Mazda CX-5 via a DIY STM32F407 panda.
-- **[Panda Black Revival + City G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car.
+- **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car.
 
 ## CAN, DBC & data tools
 
