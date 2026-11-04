@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-72-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--02-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-73-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--04-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,14 +28,12 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-10-27 and 2026-11-02 (derived from git history).
+Added between 2026-10-29 and 2026-11-04 (derived from git history).
 
-- **[StarPilot](https://github.com/StarPilotHQ/StarPilot)** — Monthly-updated open-source fork. _(Forks & distributions)_
-- **[xpilot](https://github.com/onemiless/xpilot)** — Tesla-only sunnypilot fork that adds behavior through a plugin host and an on-device plugin store; targets comma 3, 3X, 3XL and four. _(Forks & distributions)_
-- **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car. _(Hardware & ports)_
+- **[ChadolPilot](https://github.com/taylor224/openpilot)** — sunnypilot-based fork for Hyundai / Kia / Genesis that adds 2025 angle steering, the Kia EV3 and CCNC support, installed from installer.comma.ai/taylor224/main; builds on the device at first boot, README in Korean and English. _(Forks & distributions)_
 - **[openpilot_ros2_bridge](https://github.com/jkk-research/openpilot_ros2_bridge)** — ROS 2 (Jazzy) bridge for comma 3/3X and comma four devices running openpilot, run on a vehicle PC from a prebuilt Docker image or a local install. _(CAN, DBC & data tools)_
 - **[navdy-hud](https://github.com/geniuth/navdy-hud)** — Android app that runs on a rooted Navdy HUD and draws lanes, lead car, speed cameras and blind spots from driving data a comma device sends over Bluetooth, with no phone in between; README in Korean. _(Dashcam, UI & companions)_
-- **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — Experimental tool that tries a fix for the faint red or gray glow in black areas of the comma four screen by changing two display settings, without switching forks or reflashing; it then restores the stock voltage and prints a report. _(Dashcam, UI & companions)_
+- **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — Experimental tool that tries a fix for the faint red or gray glow in black areas of the comma four screen by changing two display settings, without switching forks or reflashing; it then restores the stock voltage and prints a report. Archived (read-only) by its author. _(Dashcam, UI & companions)_
 
 ---
 
@@ -94,6 +92,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[openpilot](https://github.com/jixiexiaoge/openpilot)** — Merges features from several forks.
 - **[flowpilot](https://github.com/flowdriveai/flowpilot)** — openpilot-based system that runs on Android phones.
 - **[xpilot](https://github.com/onemiless/xpilot)** — Tesla-only sunnypilot fork that adds behavior through a plugin host and an on-device plugin store; targets comma 3, 3X, 3XL and four.
+- **[ChadolPilot](https://github.com/taylor224/openpilot)** — sunnypilot-based fork for Hyundai / Kia / Genesis that adds 2025 angle steering, the Kia EV3 and CCNC support, installed from installer.comma.ai/taylor224/main; builds on the device at first boot, README in Korean and English.
 
 ## Hardware & ports
 
@@ -134,7 +133,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[delamain](https://github.com/vonhex/delamain)** — Self-hosted AI vehicle companion for sunnypilot on comma hardware (voice and telemetry).
 - **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — Tesla-style HUD for the Fisker Ocean center screen, fed live by a comma device running sunnypilot.
 - **[navdy-hud](https://github.com/geniuth/navdy-hud)** — Android app that runs on a rooted Navdy HUD and draws lanes, lead car, speed cameras and blind spots from driving data a comma device sends over Bluetooth, with no phone in between; README in Korean.
-- **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — Experimental tool that tries a fix for the faint red or gray glow in black areas of the comma four screen by changing two display settings, without switching forks or reflashing; it then restores the stock voltage and prints a report.
+- **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — Experimental tool that tries a fix for the faint red or gray glow in black areas of the comma four screen by changing two display settings, without switching forks or reflashing; it then restores the stock voltage and prints a report. Archived (read-only) by its author.
 
 ## Self-hosted backends & installers
 
