@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-74-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--05-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-84-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--06-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,14 +28,24 @@
 
 ## 本週新增
 
-2026-10-30 至 2026-11-05 新增的條目（依 git 紀錄整理）。
+2026-10-30 至 2026-11-06 新增的條目（依 git 紀錄整理）。
 
+- **[carrotpilot](https://github.com/ajouatom/openpilot)** — 以 openpilot 為基礎、聚焦 Hyundai／Kia／Genesis 相容性與縱向操控體感的獨立駕駛輔助分支，從 i.carrotpilot.app/carrot-wip 安裝；支援 comma three、3X 與 four，README 為韓文、英文與簡體中文。 _(分支與發行版)_
+- **[BluePilot](https://github.com/BluePilotDev/bluepilot)** — 以 sunnypilot 為基礎、先在本地驗證再上游回報的 Ford 專用橫向與縱向強化分支，支援 comma 3X 與 comma 4，從 installer.comma.ai/BluePilotDev/bp-7.0 安裝。 _(分支與發行版)_
+- **[SunnyPilot-TeslaHW1](https://github.com/P6g9YHK6/SunnyPilot-TeslaHW1)** — 以 sunnypilot 為基礎、移植 Tesla Hardware 1／AP1 支援的分支（已在 2015 Model S 與 2016 Model X 測試），搭配 xnor 線束，支援 comma 3X 與 comma 4。 _(分支與發行版)_
+- **[sealion7ka2](https://github.com/diamondlim/sealion7ka2)** — KA2（openpilot 系 ADAS 盒，用於 BYD Sealion 7）分支的獨立備份：裝置追蹤的 longitudinal_off 分支，含 rate／alive gating 修正、無雷達規劃器與 ka2_hermes 盒端工具。 _(分支與發行版)_
 - **[ChadolPilot](https://github.com/taylor224/openpilot)** — 以 sunnypilot 為基礎、針對 Hyundai／Kia／Genesis 的分支，加入 2025 年款角度轉向、Kia EV3 與 CCNC 支援，從 installer.comma.ai/taylor224/main 安裝；首次開機在裝置上建置，README 為韓文與英文。 _(分支與發行版)_
+- **[jetson-cuda-overlay](https://github.com/feiyang2025/jetson-cuda-overlay)** — 可套用到 sunnypilot、openpilot 等分支的 NVIDIA Jetson AGX Orin CUDA／TensorRT 與 V4L2 鏡頭覆蓋層，讓各分支共用同一套 CUDA 推論與 GMSL 鏡頭路徑。 _(硬體與移植)_
+- **[subaru-preglobal-icbm](https://github.com/khaled-khurram/subaru-preglobal-icbm)** — 給搭載 EyeSight 的 preglobal Subaru 用的 Intelligent Cruise Button Management：在 sunnypilot 上透過已在改寫的 ES_Distance 訊息模擬 ACC 按鍵，已在 2015 Outback 實車驗證；完整縱向控制仍是未完成的研究。 _(硬體與移植)_
 - **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。 _(硬體與移植)_
 - **[openpilot_ros2_bridge](https://github.com/jkk-research/openpilot_ros2_bridge)** — 給跑 openpilot 的 comma 3/3X 與 comma four 裝置用的 ROS 2（Jazzy）橋接，在車上電腦以預建 Docker 映像或本機安裝執行。 _(CAN、DBC 與資料工具)_
+- **[ka2-settings](https://github.com/diamondlim/ka2-settings)** — 給 KA2（openpilot 系 ADAS 盒，用於 BYD Sealion 7）的 Android 前面板：透過藍牙 SPP 顯示即時狀態、ACC 按鍵、盒端依 schema 提供的設定清單、調校列與溫度。 _(行車紀錄、UI 與周邊)_
+- **[SimSteer](https://github.com/140er/simsteer)** — 以畫面擷取搭配虛擬手把或方向盤，用 comma.ai openpilot 的視覺與規劃模型來開 Euro Truck Simulator 2、Assetto Corsa 與 Forza。 _(行車紀錄、UI 與周邊)_
+- **[op助手](https://github.com/mouxangithub/ai)** — 給各 openpilot 分支（sunnypilot、FrogPilot、dragonpilot 等）的裝置端 AI 助手：聊天調參、路線診斷、車輛適配、SecOC、Cabana CAN 分析與社群 Wiki RAG，並提供裝置上的網頁介面；README 為中文。 _(行車紀錄、UI 與周邊)_
 - **[navdy-hud](https://github.com/geniuth/navdy-hud)** — 直接在已 root 的 Navdy HUD 上執行的 Android App，接收 comma 裝置經藍牙送出的行車資料，在 HUD 上畫出車道、前車、測速照相與盲點，不經過手機；README 為韓文。 _(行車紀錄、UI 與周邊)_
-- **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — 實驗性工具，調整兩項顯示設定，嘗試修正 comma four 螢幕黑色區域微微泛紅或泛灰的問題，不需換分支或重刷；結束後還原原廠電壓並輸出報告。作者已封存（唯讀）。 _(行車紀錄、UI 與周邊)_
+- **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — 實驗性工具，調整兩項顯示設定，嘗試修正 comma four 螢幕黑色區域微微泛紅或泛灰的問題，不需換分支或重刷；結束後還原原廠電壓並輸出報告。 _(行車紀錄、UI 與周邊)_
 - **[CommaPlay](https://github.com/navipilot/commaplay)** — 在 comma 3 上執行的實驗性無線 CarPlay 接收模組：由裝置把 iPhone 的 CarPlay 畫面、聲音與觸控轉送到區網內的瀏覽器，不占用 openpilot 的螢幕；README 為中文。 _(行車紀錄、UI 與周邊)_
+- **[openpilot-models](https://github.com/happymaj11r/openpilot-models)** — 給 openpilot（carrot 分支）的自訂駕駛模型合集，可在裝置上的模型介面選擇下載。 _(模型、訓練與研究)_
 
 ---
 
@@ -94,6 +104,10 @@
 - **[openpilot](https://github.com/jixiexiaoge/openpilot)** — 整合多個分支功能。
 - **[flowpilot](https://github.com/flowdriveai/flowpilot)** — 可在 Android 手機執行的衍生系統。
 - **[xpilot](https://github.com/onemiless/xpilot)** — 只支援 Tesla 的 sunnypilot 衍生版，透過插件宿主與裝置上的插件商店擴充功能；支援 comma 3、3X、3XL 與 four。
+- **[carrotpilot](https://github.com/ajouatom/openpilot)** — 以 openpilot 為基礎、聚焦 Hyundai／Kia／Genesis 相容性與縱向操控體感的獨立駕駛輔助分支，從 i.carrotpilot.app/carrot-wip 安裝；支援 comma three、3X 與 four，README 為韓文、英文與簡體中文。
+- **[BluePilot](https://github.com/BluePilotDev/bluepilot)** — 以 sunnypilot 為基礎、先在本地驗證再上游回報的 Ford 專用橫向與縱向強化分支，支援 comma 3X 與 comma 4，從 installer.comma.ai/BluePilotDev/bp-7.0 安裝。
+- **[SunnyPilot-TeslaHW1](https://github.com/P6g9YHK6/SunnyPilot-TeslaHW1)** — 以 sunnypilot 為基礎、移植 Tesla Hardware 1／AP1 支援的分支（已在 2015 Model S 與 2016 Model X 測試），搭配 xnor 線束，支援 comma 3X 與 comma 4。
+- **[sealion7ka2](https://github.com/diamondlim/sealion7ka2)** — KA2（openpilot 系 ADAS 盒，用於 BYD Sealion 7）分支的獨立備份：裝置追蹤的 longitudinal_off 分支，含 rate／alive gating 修正、無雷達規劃器與 ka2_hermes 盒端工具。
 - **[ChadolPilot](https://github.com/taylor224/openpilot)** — 以 sunnypilot 為基礎、針對 Hyundai／Kia／Genesis 的分支，加入 2025 年款角度轉向、Kia EV3 與 CCNC 支援，從 installer.comma.ai/taylor224/main 安裝；首次開機在裝置上建置，README 為韓文與英文。
 
 ## 硬體與移植
@@ -107,6 +121,8 @@
 - **[ars510-radar](https://github.com/ds-sebastian/ars510-radar)** — 解碼 RAV4 2022+ 等 Toyota 的 ARS510 前雷達並接入 openpilot。
 - **[edgepilot](https://github.com/cwal1220/edgepilot)** — 在 Sipeed MaixCAM2（AX630C NPU）上跑 openpilot 駕駛模型與橫向控制，搭配 Panda CAN。
 - **[End-To-End-Self-Driving](https://github.com/Sontran0118/End-To-End-Self-Driving)** — 在 Jetson Orin Nano 上跑 openpilot，透過自製 STM32F407 panda 控制 2023 Mazda CX-5。
+- **[jetson-cuda-overlay](https://github.com/feiyang2025/jetson-cuda-overlay)** — 可套用到 sunnypilot、openpilot 等分支的 NVIDIA Jetson AGX Orin CUDA／TensorRT 與 V4L2 鏡頭覆蓋層，讓各分支共用同一套 CUDA 推論與 GMSL 鏡頭路徑。
+- **[subaru-preglobal-icbm](https://github.com/khaled-khurram/subaru-preglobal-icbm)** — 給搭載 EyeSight 的 preglobal Subaru 用的 Intelligent Cruise Button Management：在 sunnypilot 上透過已在改寫的 ES_Distance 訊息模擬 ACC 按鍵，已在 2015 Outback 實車驗證；完整縱向控制仍是未完成的研究。
 - **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。
 
 ## CAN、DBC 與資料工具
@@ -135,7 +151,10 @@
 - **[delamain](https://github.com/vonhex/delamain)** — 給 comma 上 sunnypilot 的自架 AI 行車助手（語音與遙測）。
 - **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — 給 Fisker Ocean 中控螢幕的 Tesla 風格 HUD，由跑 sunnypilot 的 comma 裝置即時供資料。
 - **[navdy-hud](https://github.com/geniuth/navdy-hud)** — 直接在已 root 的 Navdy HUD 上執行的 Android App，接收 comma 裝置經藍牙送出的行車資料，在 HUD 上畫出車道、前車、測速照相與盲點，不經過手機；README 為韓文。
-- **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — 實驗性工具，調整兩項顯示設定，嘗試修正 comma four 螢幕黑色區域微微泛紅或泛灰的問題，不需換分支或重刷；結束後還原原廠電壓並輸出報告。作者已封存（唯讀）。
+- **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — 實驗性工具，調整兩項顯示設定，嘗試修正 comma four 螢幕黑色區域微微泛紅或泛灰的問題，不需換分支或重刷；結束後還原原廠電壓並輸出報告。
+- **[ka2-settings](https://github.com/diamondlim/ka2-settings)** — 給 KA2（openpilot 系 ADAS 盒，用於 BYD Sealion 7）的 Android 前面板：透過藍牙 SPP 顯示即時狀態、ACC 按鍵、盒端依 schema 提供的設定清單、調校列與溫度。
+- **[SimSteer](https://github.com/140er/simsteer)** — 以畫面擷取搭配虛擬手把或方向盤，用 comma.ai openpilot 的視覺與規劃模型來開 Euro Truck Simulator 2、Assetto Corsa 與 Forza。
+- **[op助手](https://github.com/mouxangithub/ai)** — 給各 openpilot 分支（sunnypilot、FrogPilot、dragonpilot 等）的裝置端 AI 助手：聊天調參、路線診斷、車輛適配、SecOC、Cabana CAN 分析與社群 Wiki RAG，並提供裝置上的網頁介面；README 為中文。
 - **[CommaPlay](https://github.com/navipilot/commaplay)** — 在 comma 3 上執行的實驗性無線 CarPlay 接收模組：由裝置把 iPhone 的 CarPlay 畫面、聲音與觸控轉送到區網內的瀏覽器，不占用 openpilot 的螢幕；README 為中文。
 
 ## 自架後端與安裝工具
@@ -158,6 +177,7 @@
 - **[openpilot-pipeline](https://github.com/mbalesni/openpilot-pipeline)** — 端到端訓練流程。
 - **[openpilot-supercombo-model](https://github.com/MTammvee/openpilot-supercombo-model)** — 使用 supercombo ONNX 模型。
 - **[traffic-lights](https://github.com/sshane/traffic-lights)** — 紅綠燈辨識模型與資料。
+- **[openpilot-models](https://github.com/happymaj11r/openpilot-models)** — 給 openpilot（carrot 分支）的自訂駕駛模型合集，可在裝置上的模型介面選擇下載。
 - **[Comma.ai-Simulation-instruction](https://github.com/Aravindseenu/Comma.ai-Simulation-instruction)** — openpilot 搭配 CARLA 模擬說明。
 
 ## 文件與學習
