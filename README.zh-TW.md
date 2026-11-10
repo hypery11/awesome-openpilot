@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-88-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--09-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-88-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--10-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,8 +28,9 @@
 
 ## 本週新增
 
-2026-11-03 至 2026-11-09 新增的條目（依 git 紀錄整理）。
+2026-11-04 至 2026-11-10 新增的條目（依 git 紀錄整理）。
 
+- **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — 給 openpilot 分支用的純 Python 子模組：偵測 CommaView 是否已安裝、是否有觀看者連線，讓 comma 4 螢幕改顯示小工具（第一個是附行車統計的指南針）取代鏡頭畫面，openpilot 警示仍疊在最上層；只負責顯示，不碰控制。參考整合為 TeslaPilot。 _(行車紀錄、UI 與周邊)_
 - **[carrotpilot](https://github.com/ajouatom/openpilot)** — 以 openpilot 為基礎、聚焦 Hyundai／Kia／Genesis 相容性與縱向操控體感的獨立駕駛輔助分支，從 i.carrotpilot.app/carrot-wip 安裝；支援 comma three、3X 與 four，README 為韓文、英文與簡體中文。 _(分支與發行版)_
 - **[BluePilot](https://github.com/BluePilotDev/bluepilot)** — 以 sunnypilot 為基礎、先在本地驗證再上游回報的 Ford 專用橫向與縱向強化分支，支援 comma 3X 與 comma 4，從 installer.comma.ai/BluePilotDev/bp-7.0 安裝。 _(分支與發行版)_
 - **[SunnyPilot-TeslaHW1](https://github.com/P6g9YHK6/SunnyPilot-TeslaHW1)** — 以 sunnypilot 為基礎、移植 Tesla Hardware 1／AP1 支援的分支（已在 2015 Model S 與 2016 Model X 測試），搭配 xnor 線束，支援 comma 3X 與 comma 4。 _(分支與發行版)_
@@ -37,16 +38,15 @@
 - **[ChadolPilot](https://github.com/taylor224/openpilot)** — 以 sunnypilot 為基礎、針對 Hyundai／Kia／Genesis 的分支，加入 2025 年款角度轉向、Kia EV3 與 CCNC 支援，從 installer.comma.ai/taylor224/main 安裝；首次開機在裝置上建置，README 為韓文與英文。 _(分支與發行版)_
 - **[jetson-cuda-overlay](https://github.com/feiyang2025/jetson-cuda-overlay)** — 可套用到 sunnypilot、openpilot 等分支的 NVIDIA Jetson AGX Orin CUDA／TensorRT 與 V4L2 鏡頭覆蓋層，讓各分支共用同一套 CUDA 推論與 GMSL 鏡頭路徑。 _(硬體與移植)_
 - **[subaru-preglobal-icbm](https://github.com/khaled-khurram/subaru-preglobal-icbm)** — 給搭載 EyeSight 的 preglobal Subaru 用的 Intelligent Cruise Button Management：在 sunnypilot 上透過已在改寫的 ES_Distance 訊息模擬 ACC 按鍵，已在 2015 Outback 實車驗證；完整縱向控制仍是未完成的研究。 _(硬體與移植)_
-- **[tesla-hw1-port](https://github.com/rampage1999/tesla-hw1-port)** — sunnypilot 分支，加入 2012–2016 年 Tesla Model S/X 舊平台（HW1／AP1，另含 HW2 與 HW3 設定），搭配對應的 [opendbc 分支](https://github.com/rampage1999/tesla-hw1-opendbc)提供 teslaLegacy panda 安全模型、Bosch 雷達與 DBC 更新；移植自 xnor-tech 的 tesla-unity。 _(硬體與移植)_
-- **[fw_autopatch](https://github.com/SiliconTrailer/openpilot-tesla-fw-autopatch)** — 給 Tesla 更新後變成「Car Unrecognized: Dashcam Mode」的車主使用的腳本：讀取車輛回報的韌體版本，只把已知韌體系列的版本升級加入本機 opendbc 指紋；在 2021 Model 3、comma four、openpilot 0.11.2 上測試過。 _(CAN、DBC 與資料工具)_
 
 <details>
-<summary>本週另外新增 7 條</summary>
+<summary>本週另外新增 8 條</summary>
 
+- **[tesla-hw1-port](https://github.com/rampage1999/tesla-hw1-port)** — sunnypilot 分支，加入 2012–2016 年 Tesla Model S/X 舊平台（HW1／AP1，另含 HW2 與 HW3 設定），搭配對應的 [opendbc 分支](https://github.com/rampage1999/tesla-hw1-opendbc)提供 teslaLegacy panda 安全模型、Bosch 雷達與 DBC 更新；移植自 xnor-tech 的 tesla-unity。 _(硬體與移植)_
+- **[fw_autopatch](https://github.com/SiliconTrailer/openpilot-tesla-fw-autopatch)** — 給 Tesla 更新後變成「Car Unrecognized: Dashcam Mode」的車主使用的腳本：讀取車輛回報的韌體版本，只把已知韌體系列的版本升級加入本機 opendbc 指紋；在 2021 Model 3、comma four、openpilot 0.11.2 上測試過。 _(CAN、DBC 與資料工具)_
 - **[Leapmotor B05 / Lafa5 CAN](https://github.com/a724271419/Leapmotor-B05-Lafa5-can)** — 零跑 B05／Lafa5（LPA120）的 openpilot 可行性研究：唯讀的 CAN 逆向文件與離線 Node.js 工具，包含已解碼的 CCAN ID、CarState 欄位與還原的 E2E 校驗，不含注入實作；README 為中文。 _(CAN、DBC 與資料工具)_
 - **[ka2-settings](https://github.com/diamondlim/ka2-settings)** — 給 KA2（openpilot 系 ADAS 盒，用於 BYD Sealion 7）的 Android 前面板：透過藍牙 SPP 顯示即時狀態、ACC 按鍵、盒端依 schema 提供的設定清單、調校列與溫度。 _(行車紀錄、UI 與周邊)_
 - **[SimSteer](https://github.com/140er/simsteer)** — 以畫面擷取搭配虛擬手把或方向盤，用 comma.ai openpilot 的視覺與規劃模型來開 Euro Truck Simulator 2、Assetto Corsa 與 Forza。 _(行車紀錄、UI 與周邊)_
-- **[op助手](https://github.com/mouxangithub/ai)** — 給各 openpilot 分支（sunnypilot、FrogPilot、dragonpilot 等）的裝置端 AI 助手：聊天調參、路線診斷、車輛適配、SecOC、Cabana CAN 分析與社群 Wiki RAG，並提供裝置上的網頁介面；README 為中文。 _(行車紀錄、UI 與周邊)_
 - **[CommaPlay](https://github.com/navipilot/commaplay)** — 在 comma 3 上執行的實驗性無線 CarPlay 接收模組：由裝置把 iPhone 的 CarPlay 畫面、聲音與觸控轉送到區網內的瀏覽器，不占用 openpilot 的螢幕；README 為中文。 _(行車紀錄、UI 與周邊)_
 - **[openpilot-tailscale](https://github.com/TurboCE/openpilot-tailscale)** — 安裝腳本，把官方 Tailscale ARM64 執行檔裝到跑 openpilot、CarrotPilot 或 FrogPilot 的 AGNOS 裝置上，執行檔與登入狀態保存在 /data，開機 90 秒後由 systemd timer 啟動；README 為韓文。 _(自架後端與安裝工具)_
 - **[openpilot-models](https://github.com/happymaj11r/openpilot-models)** — 給 openpilot（carrot 分支）的自訂駕駛模型合集，可在裝置上的模型介面選擇下載。 _(模型、訓練與研究)_
@@ -163,8 +163,8 @@
 - **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — 實驗性工具，調整兩項顯示設定，嘗試修正 comma four 螢幕黑色區域微微泛紅或泛灰的問題，不需換分支或重刷；結束後還原原廠電壓並輸出報告。
 - **[ka2-settings](https://github.com/diamondlim/ka2-settings)** — 給 KA2（openpilot 系 ADAS 盒，用於 BYD Sealion 7）的 Android 前面板：透過藍牙 SPP 顯示即時狀態、ACC 按鍵、盒端依 schema 提供的設定清單、調校列與溫度。
 - **[SimSteer](https://github.com/140er/simsteer)** — 以畫面擷取搭配虛擬手把或方向盤，用 comma.ai openpilot 的視覺與規劃模型來開 Euro Truck Simulator 2、Assetto Corsa 與 Forza。
-- **[op助手](https://github.com/mouxangithub/ai)** — 給各 openpilot 分支（sunnypilot、FrogPilot、dragonpilot 等）的裝置端 AI 助手：聊天調參、路線診斷、車輛適配、SecOC、Cabana CAN 分析與社群 Wiki RAG，並提供裝置上的網頁介面；README 為中文。
 - **[CommaPlay](https://github.com/navipilot/commaplay)** — 在 comma 3 上執行的實驗性無線 CarPlay 接收模組：由裝置把 iPhone 的 CarPlay 畫面、聲音與觸控轉送到區網內的瀏覽器，不占用 openpilot 的螢幕；README 為中文。
+- **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — 給 openpilot 分支用的純 Python 子模組：偵測 CommaView 是否已安裝、是否有觀看者連線，讓 comma 4 螢幕改顯示小工具（第一個是附行車統計的指南針）取代鏡頭畫面，openpilot 警示仍疊在最上層；只負責顯示，不碰控制。參考整合為 TeslaPilot。
 
 ## 自架後端與安裝工具
 
