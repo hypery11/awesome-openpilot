@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-88-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--10-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-89-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--11-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,26 +28,26 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-11-04 and 2026-11-10 (derived from git history).
+Added between 2026-11-05 and 2026-11-11 (derived from git history).
 
-- **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — Pure-Python submodule for openpilot forks that detects when CommaView is installed and a viewer is connected, then lets the comma 4 screen show a widget (first one: a compass with drive stats) instead of the camera, with openpilot alerts still drawn on top; display only, it never touches controls. TeslaPilot is the reference integration. _(Dashcam, UI & companions)_
 - **[carrotpilot](https://github.com/ajouatom/openpilot)** — Independent openpilot-based driver assistance fork focused on Hyundai / Kia / Genesis compatibility and longitudinal feel, installed from i.carrotpilot.app/carrot-wip; supports comma three, 3X and four, README in Korean, English and Simplified Chinese. _(Forks & distributions)_
 - **[BluePilot](https://github.com/BluePilotDev/bluepilot)** — sunnypilot-based fork that stages Ford-specific lateral and longitudinal enhancements for comma 3X and comma 4 before upstreaming them, installed from installer.comma.ai/BluePilotDev/bp-7.0. _(Forks & distributions)_
 - **[SunnyPilot-TeslaHW1](https://github.com/P6g9YHK6/SunnyPilot-TeslaHW1)** — sunnypilot fork that ports Tesla Hardware 1 / AP1 support (Model S 2015 and Model X 2016 tested) using the xnor harness, for comma 3X and comma 4. _(Forks & distributions)_
 - **[sealion7ka2](https://github.com/diamondlim/sealion7ka2)** — Standalone copy of the KA2 openpilot-family ADAS box fork for a BYD Sealion 7: the longitudinal_off branch the box tracks, with rate/alive-gating fixes, a radar-free planner and ka2_hermes box tooling. _(Forks & distributions)_
-- **[ChadolPilot](https://github.com/taylor224/openpilot)** — sunnypilot-based fork for Hyundai / Kia / Genesis that adds 2025 angle steering, the Kia EV3 and CCNC support, installed from installer.comma.ai/taylor224/main; builds on the device at first boot, README in Korean and English. _(Forks & distributions)_
 - **[jetson-cuda-overlay](https://github.com/feiyang2025/jetson-cuda-overlay)** — Reusable NVIDIA Jetson AGX Orin CUDA / TensorRT and V4L2 camera overlay that can be applied onto sunnypilot, openpilot and related forks so they share one CUDA inference and GMSL camera path. _(Hardware & ports)_
 - **[subaru-preglobal-icbm](https://github.com/khaled-khurram/subaru-preglobal-icbm)** — Intelligent Cruise Button Management for preglobal Subarus with EyeSight: spoofs ACC buttons over the already-rewritten ES_Distance message on sunnypilot, driven on a 2015 Outback; full longitudinal control is still unfinished research. _(Hardware & ports)_
-
-<details>
-<summary>8 more added this week</summary>
-
 - **[tesla-hw1-port](https://github.com/rampage1999/tesla-hw1-port)** — sunnypilot fork that adds the 2012-2016 Tesla Model S/X legacy platforms (HW1 / AP1, plus HW2 and HW3 configs), with a matching [opendbc fork](https://github.com/rampage1999/tesla-hw1-opendbc) for the teslaLegacy panda safety model, Bosch radar and DBC updates; ported from the xnor-tech tesla-unity work. _(Hardware & ports)_
 - **[fw_autopatch](https://github.com/SiliconTrailer/openpilot-tesla-fw-autopatch)** — Script for Teslas that fall into "Car Unrecognized: Dashcam Mode" after a Tesla update: reads the firmware versions the car reported and adds only version bumps of an already known firmware family to your local opendbc fingerprints; tested on a 2021 Model 3 with a comma four and openpilot 0.11.2. _(CAN, DBC & data tools)_
 - **[Leapmotor B05 / Lafa5 CAN](https://github.com/a724271419/Leapmotor-B05-Lafa5-can)** — Read-only CAN reverse-engineering notes and offline Node.js tools for an openpilot feasibility study on the Leapmotor B05 / Lafa5 (LPA120): decoded CCAN IDs, CarState fields and the recovered E2E checksum, with no injection code; README in Chinese. _(CAN, DBC & data tools)_
+
+<details>
+<summary>7 more added this week</summary>
+
 - **[ka2-settings](https://github.com/diamondlim/ka2-settings)** — Android front panel for a KA2 openpilot-family ADAS box (BYD Sealion 7): live state, ACC buttons, the box's schema-driven settings list, tuning rows and temperatures over Bluetooth SPP. _(Dashcam, UI & companions)_
 - **[SimSteer](https://github.com/140er/simsteer)** — Drives Euro Truck Simulator 2, Assetto Corsa and Forza with comma.ai's openpilot vision and planning model via screen capture and a virtual gamepad or wheel. _(Dashcam, UI & companions)_
 - **[CommaPlay](https://github.com/navipilot/commaplay)** — Experimental wireless CarPlay receiver that runs on a comma 3: the device relays the iPhone's CarPlay video, audio and touch to a browser on the local network, without using openpilot's screen; README in Chinese. _(Dashcam, UI & companions)_
+- **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — Pure-Python submodule for openpilot forks that detects when CommaView is installed and a viewer is connected, then lets the comma 4 screen show a widget (first one: a compass with drive stats) instead of the camera, with openpilot alerts still drawn on top; display only, it never touches controls. TeslaPilot is the reference integration. _(Dashcam, UI & companions)_
+- **[CommaView overlay packs SDK](https://github.com/CommaView/overlay-packs-sdk)** — Pack format, checker, docs and example packs for writing CommaView overlay packs that add an openpilot fork's on-screen HUD (path, stop marker, badges, gauges, dashcam stamp) to CommaView's Live View of the comma's onroad view. _(Dashcam, UI & companions)_
 - **[openpilot-tailscale](https://github.com/TurboCE/openpilot-tailscale)** — Install script that puts official Tailscale ARM64 binaries on AGNOS devices running openpilot, CarrotPilot or FrogPilot, keeps them and the login state in /data, and starts them 90 seconds after boot from a systemd timer; README in Korean. _(Self-hosted backends & installers)_
 - **[openpilot-models](https://github.com/happymaj11r/openpilot-models)** — Collection of custom driving models for openpilot (carrot fork), selectable and downloadable from the on-device model UI. _(Models, training & research)_
 
@@ -165,6 +165,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[SimSteer](https://github.com/140er/simsteer)** — Drives Euro Truck Simulator 2, Assetto Corsa and Forza with comma.ai's openpilot vision and planning model via screen capture and a virtual gamepad or wheel.
 - **[CommaPlay](https://github.com/navipilot/commaplay)** — Experimental wireless CarPlay receiver that runs on a comma 3: the device relays the iPhone's CarPlay video, audio and touch to a browser on the local network, without using openpilot's screen; README in Chinese.
 - **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — Pure-Python submodule for openpilot forks that detects when CommaView is installed and a viewer is connected, then lets the comma 4 screen show a widget (first one: a compass with drive stats) instead of the camera, with openpilot alerts still drawn on top; display only, it never touches controls. TeslaPilot is the reference integration.
+- **[CommaView overlay packs SDK](https://github.com/CommaView/overlay-packs-sdk)** — Pack format, checker, docs and example packs for writing CommaView overlay packs that add an openpilot fork's on-screen HUD (path, stop marker, badges, gauges, dashcam stamp) to CommaView's Live View of the comma's onroad view.
 
 ## Self-hosted backends & installers
 
