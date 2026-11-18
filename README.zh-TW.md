@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-90-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--16-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-91-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--18-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,10 +28,9 @@
 
 ## 本週新增
 
-2026-11-10 至 2026-11-16 新增的條目（依 git 紀錄整理）。
+2026-11-12 至 2026-11-18 新增的條目（依 git 紀錄整理）。
 
-- **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — 給 openpilot 分支用的純 Python 子模組：偵測 CommaView 是否已安裝、是否有觀看者連線，讓 comma 4 螢幕改顯示小工具（第一個是附行車統計的指南針）取代鏡頭畫面，openpilot 警示仍疊在最上層；只負責顯示，不碰控制。參考整合為 TeslaPilot。 _(行車紀錄、UI 與周邊)_
-- **[CommaView overlay packs SDK](https://github.com/CommaView/overlay-packs-sdk)** — 撰寫 CommaView overlay pack 用的格式、檢查工具、文件與範例包，可把 openpilot 分支自己的畫面 HUD（路徑、停止標記、徽章、儀表、行車紀錄浮水印）加到 CommaView 對 comma 行車畫面的 Live View 上。 _(行車紀錄、UI 與周邊)_
+- **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — 以 opendbc 為基礎的 BYD 社群車款移植，新增 `byd` 車輛介面（CAN 解析、車輛控制器、指紋）、BYD 安全模式與 Atto 3 DBC；作者說明這是給 BYD 宋 PLUS DM-i 的 openpilot + opendbc 移植。 _(硬體與移植)_
 - **[openpilot-iphone](https://github.com/sharsharshar/openpilot-iphone)** — 把 openpilot 駕駛模型轉成 Core ML、在 iPhone 上執行的原型 iOS App，前處理與輸出解析改用 C 實作，並畫出俯視的路徑與車道線；目前只在 GitHub 的 Mac 與 iPhone 模擬器 CI 上驗證過。 _(模型、訓練與研究)_
 
 ---
@@ -112,6 +111,7 @@
 - **[subaru-preglobal-icbm](https://github.com/khaled-khurram/subaru-preglobal-icbm)** — 給搭載 EyeSight 的 preglobal Subaru 用的 Intelligent Cruise Button Management：在 sunnypilot 上透過已在改寫的 ES_Distance 訊息模擬 ACC 按鍵，已在 2015 Outback 實車驗證；完整縱向控制仍是未完成的研究。
 - **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — 以 STM32H725 重新設計、支援 CAN FD 的「Hybrid Panda」KiCad 電路板，加上讓黑色 panda（STM32F4）在目前 panda 程式碼上繼續運作的移植，以及 Honda City G7（巴西）在 openpilot v0.9.9 與 flowpilot 上的車型移植；尚未在硬體或實車上驗證。
 - **[tesla-hw1-port](https://github.com/rampage1999/tesla-hw1-port)** — sunnypilot 分支，加入 2012–2016 年 Tesla Model S/X 舊平台（HW1／AP1，另含 HW2 與 HW3 設定），搭配對應的 [opendbc 分支](https://github.com/rampage1999/tesla-hw1-opendbc)提供 teslaLegacy panda 安全模型、Bosch 雷達與 DBC 更新；移植自 xnor-tech 的 tesla-unity。
+- **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — 以 opendbc 為基礎的 BYD 社群車款移植，新增 `byd` 車輛介面（CAN 解析、車輛控制器、指紋）、BYD 安全模式與 Atto 3 DBC；作者說明這是給 BYD 宋 PLUS DM-i 的 openpilot + opendbc 移植。
 
 ## CAN、DBC 與資料工具
 

@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-90-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--16-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-91-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--18-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,10 +28,9 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-11-10 and 2026-11-16 (derived from git history).
+Added between 2026-11-12 and 2026-11-18 (derived from git history).
 
-- **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — Pure-Python submodule for openpilot forks that detects when CommaView is installed and a viewer is connected, then lets the comma 4 screen show a widget (first one: a compass with drive stats) instead of the camera, with openpilot alerts still drawn on top; display only, it never touches controls. TeslaPilot is the reference integration. _(Dashcam, UI & companions)_
-- **[CommaView overlay packs SDK](https://github.com/CommaView/overlay-packs-sdk)** — Pack format, checker, docs and example packs for writing CommaView overlay packs that add an openpilot fork's on-screen HUD (path, stop marker, badges, gauges, dashcam stamp) to CommaView's Live View of the comma's onroad view. _(Dashcam, UI & companions)_
+- **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — opendbc-based community port for BYD cars, adding a `byd` car interface (CAN parser, car controller, fingerprints), a BYD safety mode and an Atto 3 DBC; the author describes it as an openpilot + opendbc port for the BYD Song PLUS DM-i. _(Hardware & ports)_
 - **[openpilot-iphone](https://github.com/sharsharshar/openpilot-iphone)** — Prototype iOS app that runs the openpilot driving model converted to Core ML on an iPhone, with a C port of the preprocessing and output parsing and a top-down path/lane view; verified so far only in CI on Macs and the iPhone simulator. _(Models, training & research)_
 
 ---
@@ -112,6 +111,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[subaru-preglobal-icbm](https://github.com/khaled-khurram/subaru-preglobal-icbm)** — Intelligent Cruise Button Management for preglobal Subarus with EyeSight: spoofs ACC buttons over the already-rewritten ES_Distance message on sunnypilot, driven on a 2015 Outback; full longitudinal control is still unfinished research.
 - **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car.
 - **[tesla-hw1-port](https://github.com/rampage1999/tesla-hw1-port)** — sunnypilot fork that adds the 2012-2016 Tesla Model S/X legacy platforms (HW1 / AP1, plus HW2 and HW3 configs), with a matching [opendbc fork](https://github.com/rampage1999/tesla-hw1-opendbc) for the teslaLegacy panda safety model, Bosch radar and DBC updates; ported from the xnor-tech tesla-unity work.
+- **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — opendbc-based community port for BYD cars, adding a `byd` car interface (CAN parser, car controller, fingerprints), a BYD safety mode and an Atto 3 DBC; the author describes it as an openpilot + opendbc port for the BYD Song PLUS DM-i.
 
 ## CAN, DBC & data tools
 
