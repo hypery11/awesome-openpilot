@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-91-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--18-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-92-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--20-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,8 +28,9 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-11-12 and 2026-11-18 (derived from git history).
+Added between 2026-11-14 and 2026-11-20 (derived from git history).
 
+- **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — Offline evaluation of NVIDIA's Alpamayo 2 Edge vision-language-action driving model on comma/openpilot drive logs: feeds recorded camera frames plus ego history, predicts the next 6.4 s of path, and compares it with the driven path and openpilot's own plan; includes measured findings on camera slot and field-of-view mapping (VinFast VF7 data).
 - **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — opendbc-based community port for BYD cars, adding a `byd` car interface (CAN parser, car controller, fingerprints), a BYD safety mode and an Atto 3 DBC; the author describes it as an openpilot + opendbc port for the BYD Song PLUS DM-i. _(Hardware & ports)_
 - **[openpilot-iphone](https://github.com/sharsharshar/openpilot-iphone)** — Prototype iOS app that runs the openpilot driving model converted to Core ML on an iPhone, with a C port of the preprocessing and output parsing and a top-down path/lane view; verified so far only in CI on Macs and the iPhone simulator. _(Models, training & research)_
 
@@ -172,6 +173,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[openpilot-models](https://github.com/happymaj11r/openpilot-models)** — Collection of custom driving models for openpilot (carrot fork), selectable and downloadable from the on-device model UI.
 - **[Comma.ai-Simulation-instruction](https://github.com/Aravindseenu/Comma.ai-Simulation-instruction)** — Running openpilot with CARLA, with troubleshooting.
 - **[openpilot-iphone](https://github.com/sharsharshar/openpilot-iphone)** — Prototype iOS app that runs the openpilot driving model converted to Core ML on an iPhone, with a C port of the preprocessing and output parsing and a top-down path/lane view; verified so far only in CI on Macs and the iPhone simulator.
+- **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — Offline evaluation of NVIDIA's Alpamayo 2 Edge vision-language-action driving model on comma/openpilot drive logs: feeds recorded camera frames plus ego history, predicts the next 6.4 s of path, and compares it with the driven path and openpilot's own plan; includes measured findings on camera slot and field-of-view mapping (VinFast VF7 data).
 
 ## Docs & learning
 

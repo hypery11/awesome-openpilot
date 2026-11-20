@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-91-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--18-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-92-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--20-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,8 +28,9 @@
 
 ## 本週新增
 
-2026-11-12 至 2026-11-18 新增的條目（依 git 紀錄整理）。
+2026-11-14 至 2026-11-20 新增的條目（依 git 紀錄整理）。
 
+- **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — 在 comma/openpilot 行車紀錄上離線評估 NVIDIA Alpamayo 2 Edge 視覺-語言-動作駕駛模型：輸入錄下的鏡頭畫面與自車歷史，預測接下來 6.4 秒的路徑，並與實際行駛路徑及 openpilot 自身規劃比較；附上鏡頭槽位與視角對應的實測結果（VinFast VF7 資料）。
 - **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — 以 opendbc 為基礎的 BYD 社群車款移植，新增 `byd` 車輛介面（CAN 解析、車輛控制器、指紋）、BYD 安全模式與 Atto 3 DBC；作者說明這是給 BYD 宋 PLUS DM-i 的 openpilot + opendbc 移植。 _(硬體與移植)_
 - **[openpilot-iphone](https://github.com/sharsharshar/openpilot-iphone)** — 把 openpilot 駕駛模型轉成 Core ML、在 iPhone 上執行的原型 iOS App，前處理與輸出解析改用 C 實作，並畫出俯視的路徑與車道線；目前只在 GitHub 的 Mac 與 iPhone 模擬器 CI 上驗證過。 _(模型、訓練與研究)_
 
@@ -172,6 +173,7 @@
 - **[openpilot-models](https://github.com/happymaj11r/openpilot-models)** — 給 openpilot（carrot 分支）的自訂駕駛模型合集，可在裝置上的模型介面選擇下載。
 - **[Comma.ai-Simulation-instruction](https://github.com/Aravindseenu/Comma.ai-Simulation-instruction)** — openpilot 搭配 CARLA 模擬說明。
 - **[openpilot-iphone](https://github.com/sharsharshar/openpilot-iphone)** — 把 openpilot 駕駛模型轉成 Core ML、在 iPhone 上執行的原型 iOS App，前處理與輸出解析改用 C 實作，並畫出俯視的路徑與車道線；目前只在 GitHub 的 Mac 與 iPhone 模擬器 CI 上驗證過。
+- **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — 在 comma/openpilot 行車紀錄上離線評估 NVIDIA Alpamayo 2 Edge 視覺-語言-動作駕駛模型：輸入錄下的鏡頭畫面與自車歷史，預測接下來 6.4 秒的路徑，並與實際行駛路徑及 openpilot 自身規劃比較；附上鏡頭槽位與視角對應的實測結果（VinFast VF7 資料）。
 
 ## 文件與學習
 
