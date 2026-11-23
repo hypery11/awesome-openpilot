@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-92-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--20-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-97-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--23-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,11 +28,16 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-11-14 and 2026-11-20 (derived from git history).
+Added between 2026-11-17 and 2026-11-23 (derived from git history).
 
-- **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — Offline evaluation of NVIDIA's Alpamayo 2 Edge vision-language-action driving model on comma/openpilot drive logs: feeds recorded camera frames plus ego history, predicts the next 6.4 s of path, and compares it with the driven path and openpilot's own plan; includes measured findings on camera slot and field-of-view mapping (VinFast VF7 data).
 - **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — opendbc-based community port for BYD cars, adding a `byd` car interface (CAN parser, car controller, fingerprints), a BYD safety mode and an Atto 3 DBC; the author describes it as an openpilot + opendbc port for the BYD Song PLUS DM-i. _(Hardware & ports)_
-- **[openpilot-iphone](https://github.com/sharsharshar/openpilot-iphone)** — Prototype iOS app that runs the openpilot driving model converted to Core ML on an iPhone, with a C port of the preprocessing and output parsing and a top-down path/lane view; verified so far only in CI on Macs and the iPhone simulator. _(Models, training & research)_
+- **[comma-four-spherical](https://github.com/hewers/comma-four-spherical)** — Calibrates the three comma four cameras as one rig and stitches recorded openpilot drives into equirectangular (360°) videos from the rlogs and camera files; the cabin camera only contributes scenery seen through the door windows, so occupants are never drawn, and incomplete segments are skipped rather than filled with made-up frames. _(CAN, DBC & data tools)_
+- **[Comma 4 Drive Visualizer](https://github.com/spanconstant5/comma4-visualizer)** — Windows desktop app (built into a single EXE with one script) that replays openpilot routes downloaded from a comma 4 in a ui-alt / replay-clipper style view: road camera video, telemetry from the logs, a radar top-down and alert banners, with video export. _(Dashcam, UI & companions)_
+- **[T-UI](https://github.com/mlocoteta/t-ui)** — Android app (5+) that shows what openpilot/StarPilot sees (lane lines, path, lead and other cars, engagement, set speed, speed limit, alerts) on a head unit, tablet or phone, reading a read-only HUD API over the comma's Wi-Fi hotspot; the comma side is the separate [t-ui-comma-patch](https://github.com/mlocoteta/t-ui-comma-patch) for StarPilot. In development and not yet tested on a device. _(Dashcam, UI & companions)_
+- **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — Offline evaluation of NVIDIA's Alpamayo 2 Edge vision-language-action driving model on comma/openpilot drive logs: feeds recorded camera frames plus ego history, predicts the next 6.4 s of path, and compares it with the driven path and openpilot's own plan; includes measured findings on camera slot and field-of-view mapping (VinFast VF7 data). _(Models, training & research)_
+- **[openpilot-nnlc-tools](https://github.com/amzoo/openpilot-nnlc-tools)** — Consolidated tooling for training per-vehicle NNLC (Neural Network Lateral Control) models for openpilot / sunnypilot, from processing collected driving logs to running the Julia training pipeline, with a table of existing NNLC models; support is on the sunnypilot forum. _(Models, training & research)_
+- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — Fork of the NNLC training tools that fixes mismatches between the trained model and what openpilot / sunnypilot feed it at runtime (input order, torque sign), adds Adam and wider-network training options, and lets the log extractor handle large rlog collections in parallel. _(Models, training & research)_
+- **[openpilot-attention](https://github.com/luzijun360/openpilot-attention)** — macOS and Windows desktop app that runs openpilot's own driver-monitoring model (`dmonitoring_model.onnx`) offline on an ordinary webcam to estimate head pose and eye closure, giving tiered distraction alerts with openpilot's alert sounds; README in Simplified Chinese, with an English version. _(Models, training & research)_
 
 ---
 
@@ -128,6 +133,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[openpilot_ros2_bridge](https://github.com/jkk-research/openpilot_ros2_bridge)** — ROS 2 (Jazzy) bridge for comma 3/3X and comma four devices running openpilot, run on a vehicle PC from a prebuilt Docker image or a local install.
 - **[fw_autopatch](https://github.com/SiliconTrailer/openpilot-tesla-fw-autopatch)** — Script for Teslas that fall into "Car Unrecognized: Dashcam Mode" after a Tesla update: reads the firmware versions the car reported and adds only version bumps of an already known firmware family to your local opendbc fingerprints; tested on a 2021 Model 3 with a comma four and openpilot 0.11.2.
 - **[Leapmotor B05 / Lafa5 CAN](https://github.com/a724271419/Leapmotor-B05-Lafa5-can)** — Read-only CAN reverse-engineering notes and offline Node.js tools for an openpilot feasibility study on the Leapmotor B05 / Lafa5 (LPA120): decoded CCAN IDs, CarState fields and the recovered E2E checksum, with no injection code; README in Chinese.
+- **[comma-four-spherical](https://github.com/hewers/comma-four-spherical)** — Calibrates the three comma four cameras as one rig and stitches recorded openpilot drives into equirectangular (360°) videos from the rlogs and camera files; the cabin camera only contributes scenery seen through the door windows, so occupants are never drawn, and incomplete segments are skipped rather than filled with made-up frames.
 
 ## Dashcam, UI & companions
 
@@ -139,7 +145,6 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[sunnyconf](https://github.com/Falseclock/sunnyconf)** — On-device daemon to edit sunnypilot params over local WiFi from an Android app.
 - **[sunnyconf-app](https://github.com/Falseclock/sunnyconf-app)** — Native Android client for sunnyconf: configure a sunnypilot device and browse drives over local WiFi.
 - **[roadviewer-ha](https://github.com/Qualified4/roadviewer-ha)** — Home Assistant app to upload and replay openpilot logs with synced video, lanes and radar.
-- **[delamain](https://github.com/vonhex/delamain)** — Self-hosted AI vehicle companion for sunnypilot on comma hardware (voice and telemetry).
 - **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — Tesla-style HUD for the Fisker Ocean center screen, fed live by a comma device running sunnypilot.
 - **[navdy-hud](https://github.com/geniuth/navdy-hud)** — Android app that runs on a rooted Navdy HUD and draws lanes, lead car, speed cameras and blind spots from driving data a comma device sends over Bluetooth, with no phone in between; README in Korean.
 - **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — Experimental tool that tries a fix for the faint red or gray glow in black areas of the comma four screen by changing two display settings, without switching forks or reflashing; it then restores the stock voltage and prints a report.
@@ -148,6 +153,8 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[CommaPlay](https://github.com/navipilot/commaplay)** — Experimental wireless CarPlay receiver that runs on a comma 3: the device relays the iPhone's CarPlay video, audio and touch to a browser on the local network, without using openpilot's screen; README in Chinese.
 - **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — Pure-Python submodule for openpilot forks that detects when CommaView is installed and a viewer is connected, then lets the comma 4 screen show a widget (first one: a compass with drive stats) instead of the camera, with openpilot alerts still drawn on top; display only, it never touches controls. TeslaPilot is the reference integration.
 - **[CommaView overlay packs SDK](https://github.com/CommaView/overlay-packs-sdk)** — Pack format, checker, docs and example packs for writing CommaView overlay packs that add an openpilot fork's on-screen HUD (path, stop marker, badges, gauges, dashcam stamp) to CommaView's Live View of the comma's onroad view.
+- **[Comma 4 Drive Visualizer](https://github.com/spanconstant5/comma4-visualizer)** — Windows desktop app (built into a single EXE with one script) that replays openpilot routes downloaded from a comma 4 in a ui-alt / replay-clipper style view: road camera video, telemetry from the logs, a radar top-down and alert banners, with video export.
+- **[T-UI](https://github.com/mlocoteta/t-ui)** — Android app (5+) that shows what openpilot/StarPilot sees (lane lines, path, lead and other cars, engagement, set speed, speed limit, alerts) on a head unit, tablet or phone, reading a read-only HUD API over the comma's Wi-Fi hotspot; the comma side is the separate [t-ui-comma-patch](https://github.com/mlocoteta/t-ui-comma-patch) for StarPilot. In development and not yet tested on a device.
 
 ## Self-hosted backends & installers
 
@@ -174,6 +181,9 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[Comma.ai-Simulation-instruction](https://github.com/Aravindseenu/Comma.ai-Simulation-instruction)** — Running openpilot with CARLA, with troubleshooting.
 - **[openpilot-iphone](https://github.com/sharsharshar/openpilot-iphone)** — Prototype iOS app that runs the openpilot driving model converted to Core ML on an iPhone, with a C port of the preprocessing and output parsing and a top-down path/lane view; verified so far only in CI on Macs and the iPhone simulator.
 - **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — Offline evaluation of NVIDIA's Alpamayo 2 Edge vision-language-action driving model on comma/openpilot drive logs: feeds recorded camera frames plus ego history, predicts the next 6.4 s of path, and compares it with the driven path and openpilot's own plan; includes measured findings on camera slot and field-of-view mapping (VinFast VF7 data).
+- **[openpilot-nnlc-tools](https://github.com/amzoo/openpilot-nnlc-tools)** — Consolidated tooling for training per-vehicle NNLC (Neural Network Lateral Control) models for openpilot / sunnypilot, from processing collected driving logs to running the Julia training pipeline, with a table of existing NNLC models; support is on the sunnypilot forum.
+- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — Fork of the NNLC training tools that fixes mismatches between the trained model and what openpilot / sunnypilot feed it at runtime (input order, torque sign), adds Adam and wider-network training options, and lets the log extractor handle large rlog collections in parallel.
+- **[openpilot-attention](https://github.com/luzijun360/openpilot-attention)** — macOS and Windows desktop app that runs openpilot's own driver-monitoring model (`dmonitoring_model.onnx`) offline on an ordinary webcam to estimate head pose and eye closure, giving tiered distraction alerts with openpilot's alert sounds; README in Simplified Chinese, with an English version.
 
 ## Docs & learning
 
