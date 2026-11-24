@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-100-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-102-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -156,11 +156,13 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[sunnyconf](https://github.com/Falseclock/sunnyconf)** — On-device daemon to edit sunnypilot params over local WiFi from an Android app.
 - **[sunnyconf-app](https://github.com/Falseclock/sunnyconf-app)** — Native Android client for sunnyconf: configure a sunnypilot device and browse drives over local WiFi.
 - **[roadviewer-ha](https://github.com/Qualified4/roadviewer-ha)** — Home Assistant app to upload and replay openpilot logs with synced video, lanes and radar.
+- **[delamain](https://github.com/vonhex/delamain)** — Self-hosted AI vehicle companion for sunnypilot on comma hardware (voice and telemetry). Unavailable (404, checked 2026-11-24).
 - **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — Tesla-style HUD for the Fisker Ocean center screen, fed live by a comma device running sunnypilot.
 - **[navdy-hud](https://github.com/geniuth/navdy-hud)** — Android app that runs on a rooted Navdy HUD and draws lanes, lead car, speed cameras and blind spots from driving data a comma device sends over Bluetooth, with no phone in between; README in Korean.
 - **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — Experimental tool that tries a fix for the faint red or gray glow in black areas of the comma four screen by changing two display settings, without switching forks or reflashing; it then restores the stock voltage and prints a report.
 - **[ka2-settings](https://github.com/diamondlim/ka2-settings)** — Android front panel for a KA2 openpilot-family ADAS box (BYD Sealion 7): live state, ACC buttons, the box's schema-driven settings list, tuning rows and temperatures over Bluetooth SPP.
 - **[SimSteer](https://github.com/140er/simsteer)** — Drives Euro Truck Simulator 2, Assetto Corsa and Forza with comma.ai's openpilot vision and planning model via screen capture and a virtual gamepad or wheel.
+- **[op助手](https://github.com/mouxangithub/ai)** — On-device AI agent for openpilot forks (sunnypilot, FrogPilot, dragonpilot and others): chat tuning, route triage, vehicle adaptation, SecOC, Cabana CAN analysis and a community-wiki RAG, with a web UI on the device; README in Chinese. Unavailable (404, checked 2026-11-24).
 - **[CommaPlay](https://github.com/navipilot/commaplay)** — Experimental wireless CarPlay receiver that runs on a comma 3: the device relays the iPhone's CarPlay video, audio and touch to a browser on the local network, without using openpilot's screen; README in Chinese.
 - **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — Pure-Python submodule for openpilot forks that detects when CommaView is installed and a viewer is connected, then lets the comma 4 screen show a widget (first one: a compass with drive stats) instead of the camera, with openpilot alerts still drawn on top; display only, it never touches controls. TeslaPilot is the reference integration.
 - **[CommaView overlay packs SDK](https://github.com/CommaView/overlay-packs-sdk)** — Pack format, checker, docs and example packs for writing CommaView overlay packs that add an openpilot fork's on-screen HUD (path, stop marker, badges, gauges, dashcam stamp) to CommaView's Live View of the comma's onroad view.

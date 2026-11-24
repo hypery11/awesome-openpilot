@@ -24,7 +24,7 @@ Use the [Suggest a project](https://github.com/hypery11/awesome-openpilot/issues
 - On-topic and useful to people working with openpilot.
 - Open source with a recognisable license, unless it is clearly marked as a reference link.
 - Working: it builds or runs, or it is documentation that is still accurate.
-- Not archived. Archived or deleted repositories are flagged by a weekly check and then removed or moved to a note.
+- Not archived when first listed. If a listed repository is later archived or its link goes dead, a weekly check flags it; the entry stays in place and is marked, and is not removed.
 
 If you maintain the project, say so in the PR or issue. Self-submissions are welcome.
 
@@ -37,4 +37,4 @@ If you maintain the project, say so in the PR or issue. Self-submissions are wel
 
 歡迎推薦專案！最簡單的方式是用 [推薦專案表單](https://github.com/hypery11/awesome-openpilot/issues/new?template=suggest-project.yml) 開 issue，附上連結、分類和推薦理由，維護者會同時更新英文版與中文版。
 
-如果要直接發 PR，請同時修改 `README.md`（英文）和 `README.zh-TW.md`（繁體中文、台灣用語），放在同一個章節、同一個位置，每條一行，描述要客觀、不放星數。不會寫中文也沒關係，在 PR 裡說明即可，維護者會補翻譯。已封存或失效的 repo 會由每週檢查標出來。
+如果要直接發 PR，請同時修改 `README.md`（英文）和 `README.zh-TW.md`（繁體中文、台灣用語），放在同一個章節、同一個位置，每條一行，描述要客觀、不放星數。不會寫中文也沒關係，在 PR 裡說明即可，維護者會補翻譯。已封存或失效的 repo 會由每週檢查標出來，會留在清單上並加上標記，不會移除。

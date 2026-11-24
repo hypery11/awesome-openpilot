@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-100-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-102-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -156,11 +156,13 @@
 - **[sunnyconf](https://github.com/Falseclock/sunnyconf)** — 透過區網用 Android App 調整 sunnypilot 參數的裝置端服務。
 - **[sunnyconf-app](https://github.com/Falseclock/sunnyconf-app)** — sunnyconf 的原生 Android 客戶端：區網設定 sunnypilot 並瀏覽行程。
 - **[roadviewer-ha](https://github.com/Qualified4/roadviewer-ha)** — 上傳並重播 openpilot 日誌的 Home Assistant App，同步顯示影像、車道與雷達。
+- **[delamain](https://github.com/vonhex/delamain)** — 給 comma 上 sunnypilot 的自架 AI 行車助手（語音與遙測）。已失效（404，檢查日期 2026-11-24）。
 - **[oceanfront-view](https://github.com/moistpope/oceanfront-view)** — 給 Fisker Ocean 中控螢幕的 Tesla 風格 HUD，由跑 sunnypilot 的 comma 裝置即時供資料。
 - **[navdy-hud](https://github.com/geniuth/navdy-hud)** — 直接在已 root 的 Navdy HUD 上執行的 Android App，接收 comma 裝置經藍牙送出的行車資料，在 HUD 上畫出車道、前車、測速照相與盲點，不經過手機；README 為韓文。
 - **[comma4-true-black](https://github.com/alanbixby/comma4-true-black)** — 實驗性工具，調整兩項顯示設定，嘗試修正 comma four 螢幕黑色區域微微泛紅或泛灰的問題，不需換分支或重刷；結束後還原原廠電壓並輸出報告。
 - **[ka2-settings](https://github.com/diamondlim/ka2-settings)** — 給 KA2（openpilot 系 ADAS 盒，用於 BYD Sealion 7）的 Android 前面板：透過藍牙 SPP 顯示即時狀態、ACC 按鍵、盒端依 schema 提供的設定清單、調校列與溫度。
 - **[SimSteer](https://github.com/140er/simsteer)** — 以畫面擷取搭配虛擬手把或方向盤，用 comma.ai openpilot 的視覺與規劃模型來開 Euro Truck Simulator 2、Assetto Corsa 與 Forza。
+- **[op助手](https://github.com/mouxangithub/ai)** — 給各 openpilot 分支（sunnypilot、FrogPilot、dragonpilot 等）的裝置端 AI 助手：聊天調參、路線診斷、車輛適配、SecOC、Cabana CAN 分析與社群 Wiki RAG，並提供裝置上的網頁介面；README 為中文。已失效（404，檢查日期 2026-11-24）。
 - **[CommaPlay](https://github.com/navipilot/commaplay)** — 在 comma 3 上執行的實驗性無線 CarPlay 接收模組：由裝置把 iPhone 的 CarPlay 畫面、聲音與觸控轉送到區網內的瀏覽器，不占用 openpilot 的螢幕；README 為中文。
 - **[cviewdetector](https://github.com/Memberoffoxhound/cviewdetector)** — 給 openpilot 分支用的純 Python 子模組：偵測 CommaView 是否已安裝、是否有觀看者連線，讓 comma 4 螢幕改顯示小工具（第一個是附行車統計的指南針）取代鏡頭畫面，openpilot 警示仍疊在最上層；只負責顯示，不碰控制。參考整合為 TeslaPilot。
 - **[CommaView overlay packs SDK](https://github.com/CommaView/overlay-packs-sdk)** — 撰寫 CommaView overlay pack 用的格式、檢查工具、文件與範例包，可把 openpilot 分支自己的畫面 HUD（路徑、停止標記、徽章、儀表、行車紀錄浮水印）加到 CommaView 對 comma 行車畫面的 Live View 上。
