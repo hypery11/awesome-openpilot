@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-97-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--23-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-100-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,16 +28,25 @@
 
 ## 本週新增
 
-2026-11-17 至 2026-11-23 新增的條目（依 git 紀錄整理）。
+2026-11-18 至 2026-11-24 新增的條目（依 git 紀錄整理）。
 
 - **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — 以 opendbc 為基礎的 BYD 社群車款移植，新增 `byd` 車輛介面（CAN 解析、車輛控制器、指紋）、BYD 安全模式與 Atto 3 DBC；作者說明這是給 BYD 宋 PLUS DM-i 的 openpilot + opendbc 移植。 _(硬體與移植)_
 - **[comma-four-spherical](https://github.com/hewers/comma-four-spherical)** — 把 comma four 的三顆鏡頭當成一組來校正，再從 rlog 與鏡頭檔把錄下的 openpilot 行程拼接成等距長方投影（360°）影片；車內鏡頭只取車門窗外的景物，不會畫出車內乘客，不完整的片段會直接略過，不會補造畫面。 _(CAN、DBC 與資料工具)_
+- **[opdash](https://github.com/Felixowns/opdash-repo)** — 本機儀表板，透過 SSH 從裝置拉下 openpilot 行程，把每條路線的片段拼成每顆鏡頭一支影片，並提供 PlotJuggler 風格的繪圖器，可畫出每個日誌欄位，與影片、地圖以及介入、脫離、警示與變換車道的時間軸同步；行程清單顯示介入比例與 GPS 軌跡，可選擇自動同步。 _(CAN、DBC 與資料工具)_
+- **[carrotdev (Turnlight matrix)](https://github.com/joongyu01/carrotdev)** — 整理 CarrotPilot 方向燈（Turnlight）功能在現代、起亞與 Genesis 各車型上哪些 CAN 路徑可用、哪些不可用的對照表，每一格都附依據與逐步測試方法；以網頁發布，README 為韓文。 _(CAN、DBC 與資料工具)_
 - **[Comma 4 Drive Visualizer](https://github.com/spanconstant5/comma4-visualizer)** — Windows 桌面程式（用一個腳本打包成單一 EXE），以類似 ui-alt／replay-clipper 的畫面重播從 comma 4 下載的 openpilot 路線：道路鏡頭影片、取自紀錄檔的遙測、雷達俯視圖與警示橫幅，並可匯出影片。 _(行車紀錄、UI 與周邊)_
 - **[T-UI](https://github.com/mlocoteta/t-ui)** — Android App（5 以上），在車機、平板或手機上顯示 openpilot／StarPilot 看到的內容（車道線、路徑、前車與其他車輛、啟用狀態、設定速度、速限、警示），透過 comma 的 Wi-Fi 熱點讀取唯讀的 HUD API；comma 端是另一個給 StarPilot 用的 [t-ui-comma-patch](https://github.com/mlocoteta/t-ui-comma-patch)。仍在開發中，尚未在實機上測試。 _(行車紀錄、UI 與周邊)_
+- **[Comma Clips](https://github.com/Jahnkeanater/Comma-Clips)** — 在本機架設的網頁介面，像本機版的 comma connect，透過 SSH 直接讀取 comma 裝置上的行程，從前路、廣角或駕駛鏡頭匯出全解析度 MP4 片段，可選擇疊加遙測資訊（車速、介入狀態、方向燈、前車、轉向）；在 Linux 桌機上執行，可用手機操作，另有不需電腦的 Android App。對裝置只讀不寫；在執行 sunnypilot 的 comma 4 上測試。 _(行車紀錄、UI 與周邊)_
 - **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — 在 comma/openpilot 行車紀錄上離線評估 NVIDIA Alpamayo 2 Edge 視覺-語言-動作駕駛模型：輸入錄下的鏡頭畫面與自車歷史，預測接下來 6.4 秒的路徑，並與實際行駛路徑及 openpilot 自身規劃比較；附上鏡頭槽位與視角對應的實測結果（VinFast VF7 資料）。 _(模型、訓練與研究)_
 - **[openpilot-nnlc-tools](https://github.com/amzoo/openpilot-nnlc-tools)** — 整合好的工具組，用來為 openpilot／sunnypilot 訓練各車款專屬的 NNLC（神經網路橫向控制）模型，從處理收集到的行車紀錄到執行 Julia 訓練流程，並附現有 NNLC 模型列表；支援討論在 sunnypilot 論壇。 _(模型、訓練與研究)_
 - **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — NNLC 訓練工具的分支，修正訓練出的模型與 openpilot／sunnypilot 執行時實際輸入不一致的問題（輸入順序、扭力正負號），加入 Adam 與較寬網路的訓練選項，並讓紀錄擷取器能平行處理大量 rlog。 _(模型、訓練與研究)_
+
+<details>
+<summary>本週另外新增 1 條</summary>
+
 - **[openpilot-attention](https://github.com/luzijun360/openpilot-attention)** — macOS 與 Windows 桌面 App，用一般網路攝影機離線執行 openpilot 原版駕駛監測模型（`dmonitoring_model.onnx`），估計頭部朝向與閉眼跡象，並以 openpilot 原版提示音給出分級分心提醒；README 為簡體中文，另附英文版。 _(模型、訓練與研究)_
+
+</details>
 
 ---
 
@@ -134,6 +143,8 @@
 - **[fw_autopatch](https://github.com/SiliconTrailer/openpilot-tesla-fw-autopatch)** — 給 Tesla 更新後變成「Car Unrecognized: Dashcam Mode」的車主使用的腳本：讀取車輛回報的韌體版本，只把已知韌體系列的版本升級加入本機 opendbc 指紋；在 2021 Model 3、comma four、openpilot 0.11.2 上測試過。
 - **[Leapmotor B05 / Lafa5 CAN](https://github.com/a724271419/Leapmotor-B05-Lafa5-can)** — 零跑 B05／Lafa5（LPA120）的 openpilot 可行性研究：唯讀的 CAN 逆向文件與離線 Node.js 工具，包含已解碼的 CCAN ID、CarState 欄位與還原的 E2E 校驗，不含注入實作；README 為中文。
 - **[comma-four-spherical](https://github.com/hewers/comma-four-spherical)** — 把 comma four 的三顆鏡頭當成一組來校正，再從 rlog 與鏡頭檔把錄下的 openpilot 行程拼接成等距長方投影（360°）影片；車內鏡頭只取車門窗外的景物，不會畫出車內乘客，不完整的片段會直接略過，不會補造畫面。
+- **[opdash](https://github.com/Felixowns/opdash-repo)** — 本機儀表板，透過 SSH 從裝置拉下 openpilot 行程，把每條路線的片段拼成每顆鏡頭一支影片，並提供 PlotJuggler 風格的繪圖器，可畫出每個日誌欄位，與影片、地圖以及介入、脫離、警示與變換車道的時間軸同步；行程清單顯示介入比例與 GPS 軌跡，可選擇自動同步。
+- **[carrotdev (Turnlight matrix)](https://github.com/joongyu01/carrotdev)** — 整理 CarrotPilot 方向燈（Turnlight）功能在現代、起亞與 Genesis 各車型上哪些 CAN 路徑可用、哪些不可用的對照表，每一格都附依據與逐步測試方法；以網頁發布，README 為韓文。
 
 ## 行車紀錄、UI 與周邊
 
@@ -155,6 +166,7 @@
 - **[CommaView overlay packs SDK](https://github.com/CommaView/overlay-packs-sdk)** — 撰寫 CommaView overlay pack 用的格式、檢查工具、文件與範例包，可把 openpilot 分支自己的畫面 HUD（路徑、停止標記、徽章、儀表、行車紀錄浮水印）加到 CommaView 對 comma 行車畫面的 Live View 上。
 - **[Comma 4 Drive Visualizer](https://github.com/spanconstant5/comma4-visualizer)** — Windows 桌面程式（用一個腳本打包成單一 EXE），以類似 ui-alt／replay-clipper 的畫面重播從 comma 4 下載的 openpilot 路線：道路鏡頭影片、取自紀錄檔的遙測、雷達俯視圖與警示橫幅，並可匯出影片。
 - **[T-UI](https://github.com/mlocoteta/t-ui)** — Android App（5 以上），在車機、平板或手機上顯示 openpilot／StarPilot 看到的內容（車道線、路徑、前車與其他車輛、啟用狀態、設定速度、速限、警示），透過 comma 的 Wi-Fi 熱點讀取唯讀的 HUD API；comma 端是另一個給 StarPilot 用的 [t-ui-comma-patch](https://github.com/mlocoteta/t-ui-comma-patch)。仍在開發中，尚未在實機上測試。
+- **[Comma Clips](https://github.com/Jahnkeanater/Comma-Clips)** — 在本機架設的網頁介面，像本機版的 comma connect，透過 SSH 直接讀取 comma 裝置上的行程，從前路、廣角或駕駛鏡頭匯出全解析度 MP4 片段，可選擇疊加遙測資訊（車速、介入狀態、方向燈、前車、轉向）；在 Linux 桌機上執行，可用手機操作，另有不需電腦的 Android App。對裝置只讀不寫；在執行 sunnypilot 的 comma 4 上測試。
 
 ## 自架後端與安裝工具
 
