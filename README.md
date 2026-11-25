@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-102-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-103-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--25-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,9 +28,9 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-11-18 and 2026-11-24 (derived from git history).
+Added between 2026-11-19 and 2026-11-25 (derived from git history).
 
-- **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — opendbc-based community port for BYD cars, adding a `byd` car interface (CAN parser, car controller, fingerprints), a BYD safety mode and an Atto 3 DBC; the author describes it as an openpilot + opendbc port for the BYD Song PLUS DM-i. _(Hardware & ports)_
+- **[leaf-gw](https://github.com/siigna/leaf-gw)** — Research decision core for an inline Chassis CAN gateway (an Ocelot-based interceptor with a fail-open relay) that adds openpilot longitudinal (gas/brake) control to a 2018–2023 Nissan Leaf (ZE1) while keeping the car's stock emergency braking, with the matching openpilot car-controller code; bench and dedicated test car only. _(Hardware & ports)_
 - **[comma-four-spherical](https://github.com/hewers/comma-four-spherical)** — Calibrates the three comma four cameras as one rig and stitches recorded openpilot drives into equirectangular (360°) videos from the rlogs and camera files; the cabin camera only contributes scenery seen through the door windows, so occupants are never drawn, and incomplete segments are skipped rather than filled with made-up frames. _(CAN, DBC & data tools)_
 - **[opdash](https://github.com/Felixowns/opdash-repo)** — Local dashboard that pulls openpilot drives from the device over SSH, stitches each route's segments into one video per camera, and shows a PlotJuggler-style plotter of every log field synced to the video, map and a timeline of engagements, disengagements, alerts and lane changes; drive list with engaged % and GPS traces, optional auto-sync. _(CAN, DBC & data tools)_
 - **[carrotdev (Turnlight matrix)](https://github.com/joongyu01/carrotdev)** — Per-car table of which CAN paths do and don't work for CarrotPilot's turn-signal (Turnlight) feature on Hyundai, Kia and Genesis models, with the evidence and step-by-step test methods behind each cell; published as a web page, README in Korean. _(CAN, DBC & data tools)_
@@ -39,11 +39,11 @@ Added between 2026-11-18 and 2026-11-24 (derived from git history).
 - **[Comma Clips](https://github.com/Jahnkeanater/Comma-Clips)** — Locally hosted web UI, like a local comma connect, that reads drives straight off a comma device over SSH and exports full-resolution MP4 clips from the road, wide or driver camera, with an optional telemetry overlay (speed, engagement, turn signals, lead car, steering); runs on a Linux desktop and works from a phone, plus a standalone Android app. Read-only on the device; tested on a comma 4 with sunnypilot. _(Dashcam, UI & companions)_
 - **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — Offline evaluation of NVIDIA's Alpamayo 2 Edge vision-language-action driving model on comma/openpilot drive logs: feeds recorded camera frames plus ego history, predicts the next 6.4 s of path, and compares it with the driven path and openpilot's own plan; includes measured findings on camera slot and field-of-view mapping (VinFast VF7 data). _(Models, training & research)_
 - **[openpilot-nnlc-tools](https://github.com/amzoo/openpilot-nnlc-tools)** — Consolidated tooling for training per-vehicle NNLC (Neural Network Lateral Control) models for openpilot / sunnypilot, from processing collected driving logs to running the Julia training pipeline, with a table of existing NNLC models; support is on the sunnypilot forum. _(Models, training & research)_
-- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — Fork of the NNLC training tools that fixes mismatches between the trained model and what openpilot / sunnypilot feed it at runtime (input order, torque sign), adds Adam and wider-network training options, and lets the log extractor handle large rlog collections in parallel. _(Models, training & research)_
 
 <details>
-<summary>1 more added this week</summary>
+<summary>2 more added this week</summary>
 
+- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — Fork of the NNLC training tools that fixes mismatches between the trained model and what openpilot / sunnypilot feed it at runtime (input order, torque sign), adds Adam and wider-network training options, and lets the log extractor handle large rlog collections in parallel. _(Models, training & research)_
 - **[openpilot-attention](https://github.com/luzijun360/openpilot-attention)** — macOS and Windows desktop app that runs openpilot's own driver-monitoring model (`dmonitoring_model.onnx`) offline on an ordinary webcam to estimate head pose and eye closure, giving tiered distraction alerts with openpilot's alert sounds; README in Simplified Chinese, with an English version. _(Models, training & research)_
 
 </details>
@@ -127,6 +127,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil)** — KiCad redesign of a CAN FD "Hybrid Panda" on STM32H725, a forward-port that keeps the black panda (STM32F4) working on current panda code, and a Honda City G7 (Brazil) port for openpilot v0.9.9 and flowpilot; not yet validated in hardware or in the car.
 - **[tesla-hw1-port](https://github.com/rampage1999/tesla-hw1-port)** — sunnypilot fork that adds the 2012-2016 Tesla Model S/X legacy platforms (HW1 / AP1, plus HW2 and HW3 configs), with a matching [opendbc fork](https://github.com/rampage1999/tesla-hw1-opendbc) for the teslaLegacy panda safety model, Bosch radar and DBC updates; ported from the xnor-tech tesla-unity work.
 - **[openpilot-byd](https://github.com/shuangchencc/openpilot-byd)** — opendbc-based community port for BYD cars, adding a `byd` car interface (CAN parser, car controller, fingerprints), a BYD safety mode and an Atto 3 DBC; the author describes it as an openpilot + opendbc port for the BYD Song PLUS DM-i.
+- **[leaf-gw](https://github.com/siigna/leaf-gw)** — Research decision core for an inline Chassis CAN gateway (an Ocelot-based interceptor with a fail-open relay) that adds openpilot longitudinal (gas/brake) control to a 2018–2023 Nissan Leaf (ZE1) while keeping the car's stock emergency braking, with the matching openpilot car-controller code; bench and dedicated test car only.
 
 ## CAN, DBC & data tools
 
