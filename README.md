@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-103-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--25-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-104-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--26-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,7 +28,7 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-11-19 and 2026-11-25 (derived from git history).
+Added between 2026-11-20 and 2026-11-26 (derived from git history).
 
 - **[leaf-gw](https://github.com/siigna/leaf-gw)** — Research decision core for an inline Chassis CAN gateway (an Ocelot-based interceptor with a fail-open relay) that adds openpilot longitudinal (gas/brake) control to a 2018–2023 Nissan Leaf (ZE1) while keeping the car's stock emergency braking, with the matching openpilot car-controller code; bench and dedicated test car only. _(Hardware & ports)_
 - **[comma-four-spherical](https://github.com/hewers/comma-four-spherical)** — Calibrates the three comma four cameras as one rig and stitches recorded openpilot drives into equirectangular (360°) videos from the rlogs and camera files; the cabin camera only contributes scenery seen through the door windows, so occupants are never drawn, and incomplete segments are skipped rather than filled with made-up frames. _(CAN, DBC & data tools)_
@@ -39,12 +39,13 @@ Added between 2026-11-19 and 2026-11-25 (derived from git history).
 - **[Comma Clips](https://github.com/Jahnkeanater/Comma-Clips)** — Locally hosted web UI, like a local comma connect, that reads drives straight off a comma device over SSH and exports full-resolution MP4 clips from the road, wide or driver camera, with an optional telemetry overlay (speed, engagement, turn signals, lead car, steering); runs on a Linux desktop and works from a phone, plus a standalone Android app. Read-only on the device; tested on a comma 4 with sunnypilot. _(Dashcam, UI & companions)_
 - **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — Offline evaluation of NVIDIA's Alpamayo 2 Edge vision-language-action driving model on comma/openpilot drive logs: feeds recorded camera frames plus ego history, predicts the next 6.4 s of path, and compares it with the driven path and openpilot's own plan; includes measured findings on camera slot and field-of-view mapping (VinFast VF7 data). _(Models, training & research)_
 - **[openpilot-nnlc-tools](https://github.com/amzoo/openpilot-nnlc-tools)** — Consolidated tooling for training per-vehicle NNLC (Neural Network Lateral Control) models for openpilot / sunnypilot, from processing collected driving logs to running the Julia training pipeline, with a table of existing NNLC models; support is on the sunnypilot forum. _(Models, training & research)_
+- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — Fork of the NNLC training tools that fixes mismatches between the trained model and what openpilot / sunnypilot feed it at runtime (input order, torque sign), adds Adam and wider-network training options, and lets the log extractor handle large rlog collections in parallel. _(Models, training & research)_
 
 <details>
 <summary>2 more added this week</summary>
 
-- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — Fork of the NNLC training tools that fixes mismatches between the trained model and what openpilot / sunnypilot feed it at runtime (input order, torque sign), adds Adam and wider-network training options, and lets the log extractor handle large rlog collections in parallel. _(Models, training & research)_
 - **[openpilot-attention](https://github.com/luzijun360/openpilot-attention)** — macOS and Windows desktop app that runs openpilot's own driver-monitoring model (`dmonitoring_model.onnx`) offline on an ordinary webcam to estimate head pose and eye closure, giving tiered distraction alerts with openpilot's alert sounds; README in Simplified Chinese, with an English version. _(Models, training & research)_
+- **[roadsense](https://github.com/PiotrTopa/chris-roadsense)** — Car-agnostic camera road perception service that runs openpilot's MIT driving models (v0.11.1 `driving_vision` + `driving_policy`, or supercombo v0.9.7) on a phone, with a Poco F1 on postmarketOS (ncnn / Vulkan) as the reference deployment, and serves path, lane lines, road edges and lead vehicles over an HTTP / WebSocket API; it informs the driver and never controls the car. _(Models, training & research)_
 
 </details>
 
@@ -199,6 +200,7 @@ Taken from each project's README and GitHub on 2026-10-21. Forks change fast, so
 - **[openpilot-nnlc-tools](https://github.com/amzoo/openpilot-nnlc-tools)** — Consolidated tooling for training per-vehicle NNLC (Neural Network Lateral Control) models for openpilot / sunnypilot, from processing collected driving logs to running the Julia training pipeline, with a table of existing NNLC models; support is on the sunnypilot forum.
 - **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — Fork of the NNLC training tools that fixes mismatches between the trained model and what openpilot / sunnypilot feed it at runtime (input order, torque sign), adds Adam and wider-network training options, and lets the log extractor handle large rlog collections in parallel.
 - **[openpilot-attention](https://github.com/luzijun360/openpilot-attention)** — macOS and Windows desktop app that runs openpilot's own driver-monitoring model (`dmonitoring_model.onnx`) offline on an ordinary webcam to estimate head pose and eye closure, giving tiered distraction alerts with openpilot's alert sounds; README in Simplified Chinese, with an English version.
+- **[roadsense](https://github.com/PiotrTopa/chris-roadsense)** — Car-agnostic camera road perception service that runs openpilot's MIT driving models (v0.11.1 `driving_vision` + `driving_policy`, or supercombo v0.9.7) on a phone, with a Poco F1 on postmarketOS (ncnn / Vulkan) as the reference deployment, and serves path, lane lines, road edges and lead vehicles over an HTTP / WebSocket API; it informs the driver and never controls the car.
 
 ## Docs & learning
 

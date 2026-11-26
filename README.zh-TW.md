@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-103-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--25-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-104-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--26-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,7 +28,7 @@
 
 ## 本週新增
 
-2026-11-19 至 2026-11-25 新增的條目（依 git 紀錄整理）。
+2026-11-20 至 2026-11-26 新增的條目（依 git 紀錄整理）。
 
 - **[leaf-gw](https://github.com/siigna/leaf-gw)** — 研究性質的串接式 Chassis CAN 閘道決策核心（以 Ocelot 為基礎的攔截器，附故障時直通的繼電器），為 2018–2023 年 Nissan Leaf（ZE1）加上 openpilot 縱向（油門／煞車）控制，同時保留原廠緊急煞車，並附對應的 openpilot 車輛控制器程式；僅限實驗台與專用測試車。 _(硬體與移植)_
 - **[comma-four-spherical](https://github.com/hewers/comma-four-spherical)** — 把 comma four 的三顆鏡頭當成一組來校正，再從 rlog 與鏡頭檔把錄下的 openpilot 行程拼接成等距長方投影（360°）影片；車內鏡頭只取車門窗外的景物，不會畫出車內乘客，不完整的片段會直接略過，不會補造畫面。 _(CAN、DBC 與資料工具)_
@@ -39,12 +39,13 @@
 - **[Comma Clips](https://github.com/Jahnkeanater/Comma-Clips)** — 在本機架設的網頁介面，像本機版的 comma connect，透過 SSH 直接讀取 comma 裝置上的行程，從前路、廣角或駕駛鏡頭匯出全解析度 MP4 片段，可選擇疊加遙測資訊（車速、介入狀態、方向燈、前車、轉向）；在 Linux 桌機上執行，可用手機操作，另有不需電腦的 Android App。對裝置只讀不寫；在執行 sunnypilot 的 comma 4 上測試。 _(行車紀錄、UI 與周邊)_
 - **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — 在 comma/openpilot 行車紀錄上離線評估 NVIDIA Alpamayo 2 Edge 視覺-語言-動作駕駛模型：輸入錄下的鏡頭畫面與自車歷史，預測接下來 6.4 秒的路徑，並與實際行駛路徑及 openpilot 自身規劃比較；附上鏡頭槽位與視角對應的實測結果（VinFast VF7 資料）。 _(模型、訓練與研究)_
 - **[openpilot-nnlc-tools](https://github.com/amzoo/openpilot-nnlc-tools)** — 整合好的工具組，用來為 openpilot／sunnypilot 訓練各車款專屬的 NNLC（神經網路橫向控制）模型，從處理收集到的行車紀錄到執行 Julia 訓練流程，並附現有 NNLC 模型列表；支援討論在 sunnypilot 論壇。 _(模型、訓練與研究)_
+- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — NNLC 訓練工具的分支，修正訓練出的模型與 openpilot／sunnypilot 執行時實際輸入不一致的問題（輸入順序、扭力正負號），加入 Adam 與較寬網路的訓練選項，並讓紀錄擷取器能平行處理大量 rlog。 _(模型、訓練與研究)_
 
 <details>
 <summary>本週另外新增 2 條</summary>
 
-- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — NNLC 訓練工具的分支，修正訓練出的模型與 openpilot／sunnypilot 執行時實際輸入不一致的問題（輸入順序、扭力正負號），加入 Adam 與較寬網路的訓練選項，並讓紀錄擷取器能平行處理大量 rlog。 _(模型、訓練與研究)_
 - **[openpilot-attention](https://github.com/luzijun360/openpilot-attention)** — macOS 與 Windows 桌面 App，用一般網路攝影機離線執行 openpilot 原版駕駛監測模型（`dmonitoring_model.onnx`），估計頭部朝向與閉眼跡象，並以 openpilot 原版提示音給出分級分心提醒；README 為簡體中文，另附英文版。 _(模型、訓練與研究)_
+- **[roadsense](https://github.com/PiotrTopa/chris-roadsense)** — 不限車種的鏡頭道路感知服務，在手機上執行 openpilot 的 MIT 授權駕駛模型（v0.11.1 `driving_vision` + `driving_policy`，或 supercombo v0.9.7），參考部署為執行 postmarketOS 的 Poco F1（ncnn／Vulkan），並透過 HTTP／WebSocket API 提供路徑、車道線、路緣與前車資訊；只提供資訊給駕駛，從不控制車輛。 _(模型、訓練與研究)_
 
 </details>
 
@@ -199,6 +200,7 @@
 - **[openpilot-nnlc-tools](https://github.com/amzoo/openpilot-nnlc-tools)** — 整合好的工具組，用來為 openpilot／sunnypilot 訓練各車款專屬的 NNLC（神經網路橫向控制）模型，從處理收集到的行車紀錄到執行 Julia 訓練流程，並附現有 NNLC 模型列表；支援討論在 sunnypilot 論壇。
 - **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — NNLC 訓練工具的分支，修正訓練出的模型與 openpilot／sunnypilot 執行時實際輸入不一致的問題（輸入順序、扭力正負號），加入 Adam 與較寬網路的訓練選項，並讓紀錄擷取器能平行處理大量 rlog。
 - **[openpilot-attention](https://github.com/luzijun360/openpilot-attention)** — macOS 與 Windows 桌面 App，用一般網路攝影機離線執行 openpilot 原版駕駛監測模型（`dmonitoring_model.onnx`），估計頭部朝向與閉眼跡象，並以 openpilot 原版提示音給出分級分心提醒；README 為簡體中文，另附英文版。
+- **[roadsense](https://github.com/PiotrTopa/chris-roadsense)** — 不限車種的鏡頭道路感知服務，在手機上執行 openpilot 的 MIT 授權駕駛模型（v0.11.1 `driving_vision` + `driving_policy`，或 supercombo v0.9.7），參考部署為執行 postmarketOS 的 Poco F1（ncnn／Vulkan），並透過 HTTP／WebSocket API 提供路徑、車道線、路緣與前車資訊；只提供資訊給駕駛，從不控制車輛。
 
 ## 文件與學習
 
