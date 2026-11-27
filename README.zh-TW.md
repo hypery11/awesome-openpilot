@@ -2,7 +2,7 @@
 
 ![Awesome openpilot](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-104-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--26-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-105-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--27-brightgreen)](https://github.com/hypery11/awesome-openpilot/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-openpilot/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,7 +28,7 @@
 
 ## 本週新增
 
-2026-11-20 至 2026-11-26 新增的條目（依 git 紀錄整理）。
+2026-11-21 至 2026-11-27 新增的條目（依 git 紀錄整理）。
 
 - **[leaf-gw](https://github.com/siigna/leaf-gw)** — 研究性質的串接式 Chassis CAN 閘道決策核心（以 Ocelot 為基礎的攔截器，附故障時直通的繼電器），為 2018–2023 年 Nissan Leaf（ZE1）加上 openpilot 縱向（油門／煞車）控制，同時保留原廠緊急煞車，並附對應的 openpilot 車輛控制器程式；僅限實驗台與專用測試車。 _(硬體與移植)_
 - **[comma-four-spherical](https://github.com/hewers/comma-four-spherical)** — 把 comma four 的三顆鏡頭當成一組來校正，再從 rlog 與鏡頭檔把錄下的 openpilot 行程拼接成等距長方投影（360°）影片；車內鏡頭只取車門窗外的景物，不會畫出車內乘客，不完整的片段會直接略過，不會補造畫面。 _(CAN、DBC 與資料工具)_
@@ -37,13 +37,13 @@
 - **[Comma 4 Drive Visualizer](https://github.com/spanconstant5/comma4-visualizer)** — Windows 桌面程式（用一個腳本打包成單一 EXE），以類似 ui-alt／replay-clipper 的畫面重播從 comma 4 下載的 openpilot 路線：道路鏡頭影片、取自紀錄檔的遙測、雷達俯視圖與警示橫幅，並可匯出影片。 _(行車紀錄、UI 與周邊)_
 - **[T-UI](https://github.com/mlocoteta/t-ui)** — Android App（5 以上），在車機、平板或手機上顯示 openpilot／StarPilot 看到的內容（車道線、路徑、前車與其他車輛、啟用狀態、設定速度、速限、警示），透過 comma 的 Wi-Fi 熱點讀取唯讀的 HUD API；comma 端是另一個給 StarPilot 用的 [t-ui-comma-patch](https://github.com/mlocoteta/t-ui-comma-patch)。仍在開發中，尚未在實機上測試。 _(行車紀錄、UI 與周邊)_
 - **[Comma Clips](https://github.com/Jahnkeanater/Comma-Clips)** — 在本機架設的網頁介面，像本機版的 comma connect，透過 SSH 直接讀取 comma 裝置上的行程，從前路、廣角或駕駛鏡頭匯出全解析度 MP4 片段，可選擇疊加遙測資訊（車速、介入狀態、方向燈、前車、轉向）；在 Linux 桌機上執行，可用手機操作，另有不需電腦的 Android App。對裝置只讀不寫；在執行 sunnypilot 的 comma 4 上測試。 _(行車紀錄、UI 與周邊)_
-- **[alpamayo-op](https://github.com/ntcong/alpamayo-op)** — 在 comma/openpilot 行車紀錄上離線評估 NVIDIA Alpamayo 2 Edge 視覺-語言-動作駕駛模型：輸入錄下的鏡頭畫面與自車歷史，預測接下來 6.4 秒的路徑，並與實際行駛路徑及 openpilot 自身規劃比較；附上鏡頭槽位與視角對應的實測結果（VinFast VF7 資料）。 _(模型、訓練與研究)_
+- **[StarPilot USB Recovery](https://github.com/StarPilotHQ/flash)** — 瀏覽器 USB 救援頁面（桌面版 Chrome，也架在 flash.firestar.link），以 comma 的 USB 燒錄工具為基礎，適用 comma 3、3X 與目前的 AGNOS 裝置：依選定的 StarPilot 分支或任何公開 GitHub openpilot 分支所指定的 AGNOS 版本燒錄，可清除 cache 與 userdata 成乾淨檔案系統，並可預先寫入 SSH 公鑰與 Wi-Fi 設定供首次開機使用。 _(自架後端與安裝工具)_
 - **[openpilot-nnlc-tools](https://github.com/amzoo/openpilot-nnlc-tools)** — 整合好的工具組，用來為 openpilot／sunnypilot 訓練各車款專屬的 NNLC（神經網路橫向控制）模型，從處理收集到的行車紀錄到執行 Julia 訓練流程，並附現有 NNLC 模型列表；支援討論在 sunnypilot 論壇。 _(模型、訓練與研究)_
-- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — NNLC 訓練工具的分支，修正訓練出的模型與 openpilot／sunnypilot 執行時實際輸入不一致的問題（輸入順序、扭力正負號），加入 Adam 與較寬網路的訓練選項，並讓紀錄擷取器能平行處理大量 rlog。 _(模型、訓練與研究)_
 
 <details>
-<summary>本週另外新增 2 條</summary>
+<summary>本週另外新增 3 條</summary>
 
+- **[openpilot-nnlc-tools (tto1979)](https://github.com/tto1979/openpilot-nnlc-tools)** — NNLC 訓練工具的分支，修正訓練出的模型與 openpilot／sunnypilot 執行時實際輸入不一致的問題（輸入順序、扭力正負號），加入 Adam 與較寬網路的訓練選項，並讓紀錄擷取器能平行處理大量 rlog。 _(模型、訓練與研究)_
 - **[openpilot-attention](https://github.com/luzijun360/openpilot-attention)** — macOS 與 Windows 桌面 App，用一般網路攝影機離線執行 openpilot 原版駕駛監測模型（`dmonitoring_model.onnx`），估計頭部朝向與閉眼跡象，並以 openpilot 原版提示音給出分級分心提醒；README 為簡體中文，另附英文版。 _(模型、訓練與研究)_
 - **[roadsense](https://github.com/PiotrTopa/chris-roadsense)** — 不限車種的鏡頭道路感知服務，在手機上執行 openpilot 的 MIT 授權駕駛模型（v0.11.1 `driving_vision` + `driving_policy`，或 supercombo v0.9.7），參考部署為執行 postmarketOS 的 Poco F1（ncnn／Vulkan），並透過 HTTP／WebSocket API 提供路徑、車道線、路緣與前車資訊；只提供資訊給駕駛，從不控制車輛。 _(模型、訓練與研究)_
 
@@ -179,6 +179,7 @@
 - **[openpilot-installer-generator](https://github.com/sshane/openpilot-installer-generator)** — 產生自訂分支安裝程式。
 - **[comma-analytics](https://github.com/clickityclickclickclick/comma-analytics)** — 自架 Grafana 儀表板，分析 comma／openpilot 行程。
 - **[openpilot-tailscale](https://github.com/TurboCE/openpilot-tailscale)** — 安裝腳本，把官方 Tailscale ARM64 執行檔裝到跑 openpilot、CarrotPilot 或 FrogPilot 的 AGNOS 裝置上，執行檔與登入狀態保存在 /data，開機 90 秒後由 systemd timer 啟動；README 為韓文。
+- **[StarPilot USB Recovery](https://github.com/StarPilotHQ/flash)** — 瀏覽器 USB 救援頁面（桌面版 Chrome，也架在 flash.firestar.link），以 comma 的 USB 燒錄工具為基礎，適用 comma 3、3X 與目前的 AGNOS 裝置：依選定的 StarPilot 分支或任何公開 GitHub openpilot 分支所指定的 AGNOS 版本燒錄，可清除 cache 與 userdata 成乾淨檔案系統，並可預先寫入 SSH 公鑰與 Wi-Fi 設定供首次開機使用。
 
 ## 模型、訓練與研究
 
